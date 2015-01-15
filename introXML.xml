@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- List of Best-Selling Digital Singles
+ Reference: Wikipedia http://en.wikipedia.org/wiki/List_of_best-selling_singles#Bestselling_digital_singles
+ Updated: 01-15-2015
+-->
 <songList>
 	<song releaseDate="2009">
 		<artist>Kesha</artist>
@@ -14,6 +18,9 @@
 		<artist>Robin Thicke</artist>
 		<title>Blurred Lines</title>
 		<sales>14.8</sales>
+		<note>
+			<![CDATA[ Sales figure includes 'equivalent track streams'. ]]>
+		</note>
 	</song>
 	<song releaseDate="2011">
 		<artist>Maroon 5</artist>

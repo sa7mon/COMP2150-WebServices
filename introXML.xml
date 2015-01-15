@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <songList>
-	<song releaseDate=" ">
-		<artist></artist>
-		<title></title>
-		<sales></sales>
+	<song releaseDate="2009">
+		<artist>Kesha</artist>
+		<title>Tik Tok</title>
+		<sales>15</sales>
+	</song>
+	<song releaseDate="2009">
+		<artist>The Black Eyed Peas</artist>
+		<title>I Gotta Feeling</title>
+		<sales>2009</sales>
+	</song>
+	<song releaseDate="2013">
+		<artist>Robin Thicke</artist>
+		<title>Blurred Lines</title>
+		<sales>14.8</sales>
+	</song>
+	<song releaseDate="2011">
+		<artist>Maroon 5</artist>
+		<title>Moves like Jagger</title>
+		<sales>14.4</sales>
 	</song>
 </songList>

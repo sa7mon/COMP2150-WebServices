@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!ELEMENT dinosaurs (carnivore | herbivore | omnivore)*> <!-- Asterisk indicates any of the sub-elements can be used any amount of times including zero.-->
-	<!ELEMENT carnivore ( )>
+	<!ELEMENT carnivore()>
 	<!ATTLIST carnivore 
 		kind CDATA #REQUIRED
 		habitat CDATA #IMPLIED
 		period (Triassic | Jurassic | Cretaceous) "Cretaceous"
 		feathers CDATA #IMPLIED>
-	<!ELEMENT herbivore>
-	<!ELEMENT omnivore>
+<!ELEMENT herbivore()>
+<!ATTLIST herbivore
+		kind CDATA #REQUIRED
+		habitat CDATA #IMPLIED
+		period (Triassic | Jurassic | Cretaceous) "Cretaceous"
+		feathers CDATA #IMPLIED>
+<!ELEMENT omnivore()>

@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!ELEMENT dinosaurs()>
+<!ELEMENT dinosaurs(carnivore | herbivore | omnivore)>
+	<!ELEMENT carnivore>
+	<!ELEMENT herbivore>
+	<!ELEMENT omnivore>

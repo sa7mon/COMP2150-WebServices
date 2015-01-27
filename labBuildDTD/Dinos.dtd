@@ -13,3 +13,8 @@
 		period (Triassic | Jurassic | Cretaceous) "Cretaceous"
 		feathers CDATA #IMPLIED>
 <!ELEMENT omnivore()>
+<!ATTLIST omnivore
+		kind CDATA #REQUIRED
+		habitat CDATA #IMPLIED
+		period (Triassic | Jurassic | Cretaceous) "Cretaceous"
+		feathers CDATA #IMPLIED>

@@ -20,3 +20,12 @@
 		habitat CDATA #IMPLIED
 		period (Triassic | Jurassic | Cretaceous) "Cretaceous"
 		feathers CDATA #IMPLIED>
+<!ELEMENT species (#PCDATA)>
+<!ELEMENT length (#PCDATA)>
+<!ELEMENT height (#PCDATA)>
+<!ELEMENT weight (#PCDATA)>
+<!ELEMENT speed (#PCDATA)>
+<!ELEMENT weapon (#PCDATA)>
+<!ELEMENT discoverer (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+<!ELEMENT description (#PCDATA)>

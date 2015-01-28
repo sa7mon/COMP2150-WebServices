@@ -2,30 +2,32 @@
 <!ELEMENT dinosaurs (carnivore | herbivore | omnivore)*> <!-- Asterisk indicates any of the sub-elements can be used any amount of times including zero.-->
 	<!-- Now we declare what sub elements are going to be under the parent of carnivore-->
 <!-- #REQUIRED: The attribute is required. #IMPLIED: It's optional. -->	
-<!ELEMENT carnivore (species, length, height, weight, speed, weapon, discover, location, description)>
+<!ELEMENT carnivore (species, length, height, weight, speed, weapon, discoverer, location, description)>
 	<!ATTLIST carnivore 
 		kind CDATA #REQUIRED
 		habitat CDATA #IMPLIED
 		period (Triassic | Jurassic | Cretaceous) "Cretaceous"
 		feathers CDATA #IMPLIED>
-<!ELEMENT herbivore (species, length, height, weight, speed, weapon, discover, location, description)>
+<!ELEMENT herbivore (species, length, height, weight, speed, weapon, discoverer, location, description)>
 <!ATTLIST herbivore
 		kind CDATA #REQUIRED
 		habitat CDATA #IMPLIED
 		period (Triassic | Jurassic | Cretaceous) "Cretaceous"
 		feathers CDATA #IMPLIED>
-<!ELEMENT omnivore (species, length, height, weight, speed, weapon, discover, location, description)>
+<!ELEMENT omnivore (species, length, height, weight, speed, weapon, discoverer, location, description)>
 <!ATTLIST omnivore
 		kind CDATA #REQUIRED
 		habitat CDATA #IMPLIED
 		period (Triassic | Jurassic | Cretaceous) "Cretaceous"
 		feathers CDATA #IMPLIED>
-<!ELEMENT species (#PCDATA)>
-<!ELEMENT length (#PCDATA)>
-<!ELEMENT height (#PCDATA)>
-<!ELEMENT weight (#PCDATA)>
-<!ELEMENT speed (#PCDATA)>
-<!ELEMENT weapon (#PCDATA)>
-<!ELEMENT discoverer (#PCDATA)>
-<!ELEMENT location (#PCDATA)>
-<!ELEMENT description (#PCDATA)>
+  <!ELEMENT species (#PCDATA)>
+  <!ELEMENT length (#PCDATA)>
+  <!ELEMENT height (#PCDATA)>
+  <!ELEMENT weight (#PCDATA)>
+  <!ELEMENT speed (#PCDATA)>
+  <!ELEMENT weapon (#PCDATA)>
+    <!ATTLIST weapon 
+                images CDATA #IMPLIED>
+  <!ELEMENT discoverer (#PCDATA)>
+  <!ELEMENT location (#PCDATA)>
+  <!ELEMENT description (#PCDATA)>

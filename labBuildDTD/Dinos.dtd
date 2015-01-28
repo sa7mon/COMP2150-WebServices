@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!ELEMENT dinosaurs (carnivore | herbivore | omnivore)*> <!-- Asterisk indicates any of the sub-elements can be used any amount of times including zero.-->
-	<!ELEMENT carnivore(species, length, height, weight, speed, weapon, discover, location, description)>
+	<!-- Now we declare what sub elements are going to be under the parent of carnivore-->
+<!-- #REQUIRED: The attribute is required. #IMPLIED: It's optional. -->	
+<!ELEMENT carnivore (species, length, height, weight, speed, weapon, discover, location, description)>
 	<!ATTLIST carnivore 
 		kind CDATA #REQUIRED
 		habitat CDATA #IMPLIED
 		period (Triassic | Jurassic | Cretaceous) "Cretaceous"
 		feathers CDATA #IMPLIED>
-<!ELEMENT herbivore(species, length, height, weight, speed, weapon, discover, location, description)>
+<!ELEMENT herbivore (species, length, height, weight, speed, weapon, discover, location, description)>
 <!ATTLIST herbivore
 		kind CDATA #REQUIRED
 		habitat CDATA #IMPLIED
 		period (Triassic | Jurassic | Cretaceous) "Cretaceous"
 		feathers CDATA #IMPLIED>
-<!ELEMENT omnivore(species, length, height, weight, speed, weapon, discover, location, description)>
+<!ELEMENT omnivore (species, length, height, weight, speed, weapon, discover, location, description)>
 <!ATTLIST omnivore
 		kind CDATA #REQUIRED
 		habitat CDATA #IMPLIED

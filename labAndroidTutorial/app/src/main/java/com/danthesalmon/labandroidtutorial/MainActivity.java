@@ -15,6 +15,10 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Access the TextView defined in activity_main.xml
+        mainTextView = (TextView) findViewById(R.id.main_textview);
+        mainTextView.setText("Set in the code!");
     }
 
 

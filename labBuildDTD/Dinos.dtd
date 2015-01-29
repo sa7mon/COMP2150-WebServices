@@ -25,9 +25,14 @@
   <!ELEMENT height (#PCDATA)>
   <!ELEMENT weight (#PCDATA)>
   <!ELEMENT speed (#PCDATA)>
-  <!ELEMENT weapon (#PCDATA)>
+  <!ELEMENT weapon (part-of-body, description)><!-- We say what sub-elements there will be. -->
     <!ATTLIST weapon 
-                images CDATA #IMPLIED>
-  <!ELEMENT discoverer (#PCDATA)>
-  <!ELEMENT location (#PCDATA)>
-  <!ELEMENT description (#PCDATA)>
+                images CDATA #IMPLIED> <!-- First parameter of attributelist is what element the list is for. -->
+    <!ELEMENT part-of-body (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+  <!ELEMENT discoverer (name, year)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT year (#PCDATA)>
+  <!ELEMENT location (country, region)>
+    <!ELEMENT country (#PCDATA)>
+    <!ELEMENT region (#PCDATA)>

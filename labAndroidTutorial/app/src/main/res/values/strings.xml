@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">labAndroidTutorial</string>
-    <string name="hello_world">My name is Dan!</string>
+    <string name="textView">My name is Dan!</string>
     <string name="action_settings">Settings</string>
 
 </resources>

@@ -4,5 +4,6 @@
     <string name="app_name">labAndroidTutorial</string>
     <string name="textView">My name is Dan!</string>
     <string name="action_settings">Settings</string>
+    <string name="button">Update The TextView</string>
 
 </resources>

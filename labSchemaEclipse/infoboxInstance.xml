@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:infoBox xmlns:tns="https://danthesalmon.com/infoboxSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://danthesalmon.com/infoboxSchema infoboxSchema.xsd ">
+  <tns:author>Yann Martel</tns:author>
+  <tns:originalTitle>LIfe of Pi</tns:originalTitle>
+  <tns:displayTitle>Life of Pi</tns:displayTitle>
+  <tns:language scheme="RTF5646">
+    <tns:name>en-US</tns:name>
+  </tns:language>
+  <tns:genre>Fiction</tns:genre>
+  <tns:publisher>Knopf Canda</tns:publisher>
+  <tns:publicationDate scheme="W3C-DTF">
+    <tns:name>2001-09</tns:name>
+  </tns:publicationDate>
+  <tns:pages>401</tns:pages>
+</tns:infoBox>

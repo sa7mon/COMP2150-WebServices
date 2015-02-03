@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{10BEBDEE-5026-439E-BCFC-31CB814EA17A}"
 	ProjectSection(SolutionItems) = preProject
 		dinos.xml = dinos.xml
+		dinos.xsd = dinos.xsd
 		dtdDino.dtd = dtdDino.dtd
 	EndProjectSection
 EndProject

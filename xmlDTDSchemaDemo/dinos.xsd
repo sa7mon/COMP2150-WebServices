@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="dinosaurs">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="carnivore" />
+        <xs:element ref="herbivore" />
+        <xs:element ref="omnivore" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="carnivore">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="species" />
+        <xs:element ref="length" />
+        <xs:element ref="height" />
+        <xs:element ref="weight" />
+        <xs:element ref="speed" />
+        <xs:element ref="weapon" />
+        <xs:element ref="discoverer" />
+        <xs:element ref="location" />
+        <xs:element ref="description" />
+      </xs:sequence>
+      <xs:attribute name="kind" type="xs:string" use="required" />
+      <xs:attribute name="habitat" type="xs:string" />
+      <xs:attribute default="Cretaceous" name="period">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="Triassic" />
+            <xs:enumeration value="Jurassic" />
+            <xs:enumeration value="Cretaceous" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="feathers" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="herbivore">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="species" />
+        <xs:element ref="length" />
+        <xs:element ref="height" />
+        <xs:element ref="weight" />
+        <xs:element ref="speed" />
+        <xs:element ref="weapon" />
+        <xs:element ref="discoverer" />
+        <xs:element ref="location" />
+        <xs:element ref="description" />
+      </xs:sequence>
+      <xs:attribute name="kind" type="xs:string" use="required" />
+      <xs:attribute name="habitat" type="xs:string" />
+      <xs:attribute default="Cretaceous" name="period">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="Triassic" />
+            <xs:enumeration value="Jurassic" />
+            <xs:enumeration value="Cretaceous" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="feathers" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="omnivore">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="species" />
+        <xs:element ref="length" />
+        <xs:element ref="height" />
+        <xs:element ref="weight" />
+        <xs:element ref="speed" />
+        <xs:element ref="weapon" />
+        <xs:element ref="discoverer" />
+        <xs:element ref="location" />
+        <xs:element ref="description" />
+      </xs:sequence>
+      <xs:attribute name="kind" type="xs:string" use="required" />
+      <xs:attribute name="habitat" type="xs:string" />
+      <xs:attribute default="Cretaceous" name="period">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="Triassic" />
+            <xs:enumeration value="Jurassic" />
+            <xs:enumeration value="Cretaceous" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="feathers" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="species" type="xs:string" />
+  <xs:element name="length" type="xs:string" />
+  <xs:element name="height" type="xs:string" />
+  <xs:element name="weight" type="xs:string" />
+  <xs:element name="speed" type="xs:string" />
+  <xs:element name="weapon">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="part-of-body" />
+        <xs:element ref="description" />
+      </xs:sequence>
+      <xs:attribute name="images" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="part-of-body" type="xs:string" />
+  <xs:element name="description" type="xs:string" />
+  <xs:element name="discoverer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name" />
+        <xs:element ref="year" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="name" type="xs:string" />
+  <xs:element name="year" type="xs:string" />
+  <xs:element name="location">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="country" />
+        <xs:element ref="region" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="country" type="xs:string" />
+  <xs:element name="region" type="xs:string" />
+</xs:schema>

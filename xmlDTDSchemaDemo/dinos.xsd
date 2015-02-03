@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema elementFormDefault="qualified" xmlns:xs="https://www.danthesalmon.com">
+<xs:schema 
+            elementFormDefault="qualified" 
+            xmlns:xs="https://danthesalmon.com"
+            targetNamespace="https://danthesalmon.com"
+            xmlns="https://danthesalmon.com">
   <xs:element name="dinosaurs">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">

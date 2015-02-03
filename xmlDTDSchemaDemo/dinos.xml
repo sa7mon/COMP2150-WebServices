@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE dinosaurs SYSTEM "/Users/peterj1/Documents/workspaceJava/XMLExamples/dino.dtd">
+<dinosaurs>
+  <carnivore kind="Tyranosaurus_Rex" habitat="forest swamp jungle">
+    <species>Tyrannosaurus Rex</species>
+    <length>42 feet</length>
+    <height>18 feet</height>
+    <weight>5-7 tons</weight>
+    <speed>25 mph</speed>
+    <weapon images="tyTooth">
+      <part-of-body>Teeth</part-of-body>
+      <description>
+        <!--  Use CDATA to 'protect' the HTML markup -->
+        <![CDATA[
+         Though the Tyrannosaurus had many different sizes of teeth, 
+         all were razor sharp and some grew to lengths of <strong>9-13 inches</strong>.
+         Broken teeth were replaced frequently by newer teeth. 
+         The powerful jaw exerted in excess of 3000 pounds of pressure!
+         ]]>
+      </description>
+    </weapon>
+    <discoverer>
+      <name>Osborn</name>
+      <year>1905</year>
+    </discoverer>
+    <location>
+      <country>Canada</country>
+      <region>Alberta</region>
+    </location>
+    <description>The Tyrannosaurus Rex was the king of the terrible lizards. Though many now believe it was a hunter and a scavenger it is no less fearsome.</description>
+  </carnivore>
+
+  <herbivore kind="Stegosauraus_Armatus" habitat="forest swamp" period="Jurassic">
+    <species>Stegosaurus Armatus</species>
+    <length>25-40 feet</length>
+    <height>14 feet</height>
+    <weight>2-4 tons</weight>
+    <speed>50 mph</speed>
+    <weapon images="stTooth">
+      <part-of-body>Spikes</part-of-body>
+      <description>
+        <!--  Use CDATA to 'protect' the HTML markup -->
+        <![CDATA[
+         The Stegosaurus ha two long rows of armor along its back.
+         At the end of its tail <strong>four large spikes</strong> were an excellent defense.
+         ]]>
+      </description>
+    </weapon>
+    <discoverer>
+      <name>Marsh</name>
+      <year>1877</year>
+    </discoverer>
+    <location>
+      <country>United States</country>
+      <region>Colorado</region>
+    </location>
+    <description>
+      <!--  Use CDATA to 'protect' the HTML markup -->
+      <![CDATA[
+         The Stegosaurus Armatus was, perhaps, the most heavily armored of all dinosaurs. 
+         It is very possible though that <i></i>it was not very smart</i>, 
+         it's brain is believed to have been <strong></strong>the size of a walnut!</strong>
+         ]]>
+    </description>
+  </herbivore>
+
+  <omnivore kind="Gallimimus_Bullatis" habitat="lakeshore prairie">
+    <species>Gallimimus Bullatus</species>
+    <length>18 fee</length>
+    <height>8 feet</height>
+    <weight>1000 pounds</weight>
+    <speed>35-60 mph</speed>
+    <!--  allow no weapon by using ? in the DTD -->
+    <weapon />
+    <discoverer>
+      <name>Roniewicz</name>
+      <year>1972</year>
+    </discoverer>
+    <location>
+      <country>Mongolia</country>
+      <region>Nemegtskaya Svita</region>
+    </location>
+    <description>
+      <![CDATA[
+      The Gallimimus Bullatus, or <i>Chicken Mimic</i> was very fast, 
+      perhaps even the fastest of all dinosaurs.
+      ]]>
+    </description>
+  </omnivore>
+
+  <omnivore kind="Tricertatops_Horridus" habitat="lakeshore city" period="Jurassic">
+    <species>Tricertatops Horridus</species>
+    <length>2 feet</length>
+    <height>6 feet</height>
+    <weight>275 pounds</weight>
+    <speed>5 mph</speed>
+    <weapon>
+      <part-of-body>external</part-of-body>
+      <description>
+        Although small and slow, the weapons used by the Horridus
+        can cause severe damage from a distance in seconds.
+      </description>
+    </weapon>
+    <discoverer>
+      <name>Heradotus</name>
+      <year>300 bc</year>
+    </discoverer>
+    <location>
+      <country>Greece</country>
+      <region>Agea</region>
+    </location>
+    <description>
+      Slick and fast. Can appear friendly until hungry or cornered.
+    </description>
+  </omnivore>
+
+  <carnivore kind="Avimimus_Portentosus"
+             habitat="fertile flatland"
+             period="Cretaceous"
+             feathers="yes" >
+    <species>Tricertatops Horridus</species>
+    <length>&lt; 1 meter</length>
+    <height>6 feet</height>
+    <weight>15 kg</weight>
+    <speed>unknown</speed>
+    <weapon>
+      <part-of-body>beak</part-of-body>
+      <description>
+        The flat nose beak was good for defense
+      </description>
+    </weapon>
+    <discoverer>
+      <name>Kurzanov</name>
+      <year>1981</year>
+    </discoverer>
+    <location>
+      <country>China</country>
+      <region>Mongolia</region>
+    </location>
+    <description>
+      About the mass of a turkey this creature bounds on long legs to escape the predacious attentions of creatures such as Velociraptor. As a result of its lifestyle, this little creature has the same leggy, long-necked body-plan as any other plains-running maniraptors, from the troodonts to ostriches. - from  http://www.bowdoin.edu/~dbensen/Dinosaurs/Avimimusportentosus.html
+    </description>
+  </carnivore>
+
+</dinosaurs>

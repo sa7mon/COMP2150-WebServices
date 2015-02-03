@@ -8,11 +8,22 @@
     		<element name="author" type="string" maxOccurs="unbounded" minOccurs="0"></element>
     		<element name="originalTitle" type="string" maxOccurs="1" minOccurs="1"></element>
     		<element name="displayTitle" type="string" maxOccurs="1" minOccurs="1"></element>
-    		<element name="language" type="string" maxOccurs="1" minOccurs="1"></element>
+    		<element name="language" type="tns:elementType"
+    			maxOccurs="1" minOccurs="1">
+    		</element>
     		<element name="genre" type="string" maxOccurs="unbounded" minOccurs="1"></element>
     		<element name="publisher" type="string" maxOccurs="1" minOccurs="1"></element>
-    		<element name="publicationDate" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="publicationDate" type="tns:elementType"
+    			maxOccurs="1" minOccurs="0">
+    		</element>
     		<element name="pages" type="integer" maxOccurs="1" minOccurs="1"></element>
     	</sequence>
+    </complexType>
+
+    <complexType name="elementType">
+    	<sequence>
+    		<element name="name" type="string"></element>
+    	</sequence>
+    	<attribute name="scheme" type="string"></attribute>
     </complexType>
 </schema>

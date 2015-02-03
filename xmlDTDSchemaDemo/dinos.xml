@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE dinosaurs SYSTEM "/Users/peterj1/Documents/workspaceJava/XMLExamples/dino.dtd">
+<!DOCTYPE dinosaurs SYSTEM "dtdDino.dtd">
 <dinosaurs>
   <carnivore kind="Tyranosaurus_Rex" habitat="forest swamp jungle">
     <species>Tyrannosaurus Rex</species>

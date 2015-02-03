@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE dinosaurs SYSTEM "dtdDino.dtd">
-<dinosaurs>
+<!--DOCTYPE dinosaurs SYSTEM "dtdDino.dtd"-->
+<dinosaurs xmlns:xs="https://www.danthesalmon.com" 
+           xs:schemaLocation="Z:\Documents\School\XML\xmlDTDSchemaDemo\dinos.xsd">
   <carnivore kind="Tyranosaurus_Rex" habitat="forest swamp jungle">
     <species>Tyrannosaurus Rex</species>
     <length>42 feet</length>

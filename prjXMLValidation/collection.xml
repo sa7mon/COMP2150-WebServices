@@ -1,7 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE catalog SYSTEM "collection.dtd">
 <catalog>
-  <product>
-    
+  <product department="Mens" size="S">
+    <item_number>123456</item_number>
+    <price currency="USD" sale="Yes">14.67</price>
+    <description>Blue Knit Cardigan</description>
+    <color>Blue</color>
+    <product_image>123456_front.png</product_image>
+    <product_image>123456_back.png</product_image>
   </product>
-  
 </catalog>

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!ELEMENT catalog (product)>
-	<!ELEMENT product (item_number, price, description, color, size, product_image)>
+	<!ELEMENT product (item_number, price, description, color, product_image+)>
 		<!ATTLIST product 
-			department (Mens|Womens|Unisex) #REQUIRED>	
+			department (Mens|Womens|Unisex) #REQUIRED
+			size (S|M|L|XL|XXL) #REQUIRED>	
 		<!ELEMENT item_number (#PCDATA)>
-		<!ELEMENT price CDATA #REQUIRED>
-		<!ELEMENT description CDATA #REQUIRED>
-		<!ELEMENT color CDATA #REQUIRED>
-		<!ELEMENT size CDATA #REQUIRED>
-		<!ELEMENT product_image CDATA #REQUIRED>
+		<!ELEMENT price (#PCDATA)>
+			<!ATTLIST price 
+			  currency CDATA #REQUIRED
+			  sale (Yes|No) "No">
+		<!ELEMENT description (#PCDATA)>
+		<!ELEMENT color (#PCDATA)>
+		<!ELEMENT product_image (#PCDATA)>

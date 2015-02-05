@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="https://danthesalmon.com">
+  <xs:element name="catalog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="product" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="item_number" />
+        <xs:element ref="price" />
+        <xs:element ref="description" />
+        <xs:element ref="color" />
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="product_image" />
+      </xs:sequence>
+      <xs:attribute name="department" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="Mens" />
+            <xs:enumeration value="Womens" />
+            <xs:enumeration value="Unisex" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="size" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="S" />
+            <xs:enumeration value="M" />
+            <xs:enumeration value="L" />
+            <xs:enumeration value="XL" />
+            <xs:enumeration value="XXL" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="item_number" type="xs:string" />
+  <xs:element name="price">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="currency" type="xs:string" use="required" />
+          <xs:attribute default="No" name="sale">
+            <xs:simpleType>
+              <xs:restriction base="xs:NMTOKEN">
+                <xs:enumeration value="Yes" />
+                <xs:enumeration value="No" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="description" type="xs:string" />
+  <xs:element name="color" type="xs:string" />
+  <xs:element name="product_image" type="xs:string" />
+</xs:schema>

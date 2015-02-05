@@ -9,4 +9,12 @@
     <product_image>123456_front.png</product_image>
     <product_image>123456_back.png</product_image>
   </product>
+  <product department="Womens" size="L">
+    <item_number>234567</item_number>
+    <price currency="USD" sale="No">45.33</price>
+    <description>Khaki Pants</description>
+    <color>Tan</color>
+    <product_image>234567_front.png</product_image>
+    <product_image>234567_back.png</product_image>
+  </product>
 </catalog>

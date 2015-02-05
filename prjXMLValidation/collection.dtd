@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!ELEMENT catalog (product)>
-	<!ELEMENT product (item_number, price, description, color, product_image+)>
+	<!ELEMENT product (item_number, price, description, 
+                     color, product_image+)>
 		<!ATTLIST product 
 			department (Mens|Womens|Unisex) #REQUIRED
 			size (S|M|L|XL|XXL) #REQUIRED>	

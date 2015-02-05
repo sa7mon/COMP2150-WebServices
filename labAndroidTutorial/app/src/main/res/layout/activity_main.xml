@@ -14,6 +14,15 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         />
+    <!--Display the keyboard when touched -->
+    <EditText
+        android:id="@+id/main_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="@string/hint"
+        />
     <!-- This nested layout contains views of its own -->
     <LinearLayout
         android:layout_width="wrap_content"

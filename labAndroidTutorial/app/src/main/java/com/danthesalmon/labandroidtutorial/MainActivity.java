@@ -4,6 +4,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,7 +14,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 
-public class MainActivity extends ActionBarActivity implements View.OnClickListener {
+public class MainActivity extends ActionBarActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
 
     TextView mainTextView;
     Button mainButton;
@@ -66,5 +67,12 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         mNameList.add(mainEditText.getText().toString());
         // Update the list with the new data.
         mArrayAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        // Do something when items in the list are clicked
+
+        mainListView.setOnItemClickListener(this);
     }
 }

@@ -1,0 +1,43 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT tvSchedule (channel)+>
+<!ATTLIST tvSchedule
+  xmlns CDATA #FIXED ''
+  name CDATA #REQUIRED>
+
+<!ELEMENT channel (banner,day+)>
+<!ATTLIST channel
+  xmlns CDATA #FIXED ''
+  chan CDATA #REQUIRED>
+
+<!ELEMENT banner (#PCDATA)>
+<!ATTLIST banner
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT day (date,(holiday|programSlot))>
+<!ATTLIST day
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT date (#PCDATA)>
+<!ATTLIST date
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT holiday (#PCDATA)>
+<!ATTLIST holiday
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT programSlot (time,title,description+)>
+<!ATTLIST programSlot
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT time (#PCDATA)>
+<!ATTLIST time
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT description (#PCDATA)>
+<!ATTLIST description
+  xmlns CDATA #FIXED ''>

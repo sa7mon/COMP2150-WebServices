@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="no" ?>
+<tvSchedule name="TV Shedule">
+	<channel chan="3">
+		<banner>Hello World Banner</banner>
+		<day>
+			<date>Jan 1, 2004</date>
+			<programSlot>
+				<time>10:00</time>
+				<title>Myth Busters</title>
+				<description>Two guys blow things up</description>
+				<!-- this line is invalid because only 0 or 1 descriptions can be in programSlot -->
+				<description>Three guys try to fix things</description>
+			</programSlot>
+		</day>
+		<day>
+			<date>Jan 1, 2004</date>
+			<holiday>New Years</holiday>
+		</day>
+	</channel>
+	<channel chan="3">
+		<banner>Hello World Banner</banner>
+		<day>
+			<date>Jan 1, 2004</date>
+			<programSlot>
+				<time>10:00</time>
+				<title>Myth Busters</title>
+				<description>Two guys blow things up</description>
+			</programSlot>
+		</day>
+		<day>
+			<date>Jan 1, 2004</date>
+			<holiday>New Years</holiday>
+		</day>
+	</channel>
+</tvSchedule>

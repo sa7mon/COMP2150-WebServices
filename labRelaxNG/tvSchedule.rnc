@@ -1,0 +1,19 @@
+default namespace = ""
+
+start =
+  element tvSchedule {
+    attribute name { text },
+    element channel {
+      attribute chan { xsd:integer },
+      element banner { text },
+      element day {
+        element date { text },
+        (element holiday { text }
+         | element programSlot {
+             element time { xsd:NMTOKEN },
+             element title { text },
+             element description { text }+
+           })
+      }+
+    }+
+  }

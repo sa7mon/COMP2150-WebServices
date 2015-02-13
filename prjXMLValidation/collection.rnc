@@ -1,29 +1,18 @@
-namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+default namespace = ""
 
-catalog = element catalog { attlist.catalog, product }
-attlist.catalog &= empty
-product =
-  element product {
-    attlist.product,
-    item_number,
-    price,
-    description,
-    color,
-    product_image+
+start =
+  element catalog {
+    element product {
+      attribute department { xsd:NCName },
+      attribute size { xsd:NCName },
+      element item_number { xsd:integer },
+      element price {
+        attribute currency { xsd:NCName },
+        attribute sale { xsd:NCName },
+        xsd:decimal
+      },
+      element description { text },
+      element color { xsd:NCName },
+      element product_image { xsd:NMTOKEN }+
+    }+
   }
-attlist.product &=
-  attribute department { "Mens" | "Womens" | "Unisex" },
-  attribute size { "S" | "M" | "L" | "XL" | "XXL" }
-item_number = element item_number { attlist.item_number, text }
-attlist.item_number &= empty
-price = element price { attlist.price, text }
-attlist.price &=
-  attribute currency { text },
-  [ a:defaultValue = "No" ] attribute sale { "Yes" | "No" }?
-description = element description { attlist.description, text }
-attlist.description &= empty
-color = element color { attlist.color, text }
-attlist.color &= empty
-product_image = element product_image { attlist.product_image, text }
-attlist.product_image &= empty
-start = catalog

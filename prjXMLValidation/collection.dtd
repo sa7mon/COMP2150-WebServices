@@ -1,15 +1,33 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<!ELEMENT catalog (product)>
-	<!ELEMENT product (item_number, price, description, 
-                     color, product_image+)>
-		<!ATTLIST product 
-			department (Mens|Womens|Unisex) #REQUIRED
-			size (S|M|L|XL|XXL) #REQUIRED>	
-		<!ELEMENT item_number (#PCDATA)>
-		<!ELEMENT price (#PCDATA)>
-			<!ATTLIST price 
-			  currency CDATA #REQUIRED
-			  sale (Yes|No) "No">
-		<!ELEMENT description (#PCDATA)>
-		<!ELEMENT color (#PCDATA)>
-		<!ELEMENT product_image (#PCDATA)>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT catalog (product)+>
+<!ATTLIST catalog
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT product (item_number,price,description,color,product_image+)>
+<!ATTLIST product
+  xmlns CDATA #FIXED ''
+  department NMTOKEN #REQUIRED
+  size NMTOKEN #REQUIRED>
+
+<!ELEMENT item_number (#PCDATA)>
+<!ATTLIST item_number
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST price
+  xmlns CDATA #FIXED ''
+  currency NMTOKEN #REQUIRED
+  sale NMTOKEN #REQUIRED>
+
+<!ELEMENT description (#PCDATA)>
+<!ATTLIST description
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT color (#PCDATA)>
+<!ATTLIST color
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT product_image (#PCDATA)>
+<!ATTLIST product_image
+  xmlns CDATA #FIXED ''>

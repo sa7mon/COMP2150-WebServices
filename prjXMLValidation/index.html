@@ -1,8 +1,79 @@
 <html>
 	<head>
-
+		<!--
+			Project:    XMLValidation (https://github.com/sa7mon/COMP2150-WebServices)
+			Created By: Dan Salmon (https://danthesalmon.com)
+			Created On: 2/12/14
+			Updated On: 2/14/14
+		-->
+		<title>XML</title>
+		<style type="text/css">
+			body {
+				background: gray;
+				font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+			}
+			section {
+				width: 75%;
+				margin: auto;
+				background-color: white;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				padding-left: 5px;
+				margin-top: 20px;
+				border-radius: 10px;
+			}
+			section h2 {
+				text-align: center;
+			}
+			h3,h1,td {
+				text-align: center;
+			}
+			table {
+				margin: auto;
+			}
+		</style>
 	</head>
 	<body>
+		<section id="execSummary">
+			<h2>Executive Summary</h2>
 
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;The XML language is an all-purpose langauge made to store information. It was designed to be easily read by a parser, making the information easy to extract.  It makes it very easy to pass and store information that will be used by many different platforms.  Also built into XML is the ability to "validate" an XML document to make sure it's following certain rules in regards to what can be stored and how.</p>
+
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;The XML parser is what does all the heavy-lifting in reading XML documents. It converts XML data and elements into whatever data types you need for the platform you're on. A good example is the XML parser built into Android. Behind the scenes in every Android app is an XML doucment that describes the physical layout of the app. Google has made a set of rules that this XML document must abide by.  </p>
+		</section>
+		<section id="comparison">
+			<h2>Comparison</h2>
+
+			<table border="1">
+				<tr>
+					<th>Schema</th>
+					<th>Datatypes</th>
+					<th>Cardinality</th>
+					<th>Pros</th>
+					<th>Cons</th>
+				</tr>
+				<tr>
+					<td>DTD</td>
+					<td>string, number, int, float, boolean, <a href="http://www.w3.org/TR/dt4dtd">etc.</a></td>
+					<td>+, *, ?</td>
+					<td>Easy to read</td>
+					<td>Doesn't play well with namespaces</td>
+				</tr>
+				<tr>
+					<td>RelaxNG</td>
+					<td>Whatever you import from a <A href="http://relaxng.org/tutorial-20011203.html#IDA5UYR">datatypeLibrary.</a></td>
+					<td>oneOrMore, (none)</td>
+					<td>Cardinality easier to read, can be easily automatically generated.</td>
+					<td>DataTypes more confusing</td>
+				</tr>
+				<tr>
+					<td>XML Schema</td>
+					<td>ComplexType, SimpleType</td>
+					<td>&lt;sequence&gt;</td>
+					<td>Namespaces fully supported, more sophisticated structure constraints.</td>
+					<td>Longer than DTD</td>
+				</tr>
+			</table>
+		</section>
 	</body>
 </html>

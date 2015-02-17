@@ -1,0 +1,25 @@
+/* chapter.css - CSS for chapter.html
+   Written by Peter Johnson - peterk@webExplorations.com
+   Revised: PKJ  03-25-13 Revised and formatted
+*/
+body {
+font-family: arial, geneva;
+font-size:   18pt;
+}
+#article {
+border-top:  1px gray solid;
+}
+p {
+text-indent: 2em;
+margin:      10px;
+}
+
+h1,h2 {
+color:       navy; 
+text-align:  center; 
+border:      1px gray solid; 
+}
+      
+h3 {
+margin:      0pt;
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<article>
+	<meta>
+		<title>XML and My World</title>
+		<abstract>Turn your world of chaos into a neat and orderly XML document.</abstract>
+		<author>Abraham Lessthan</author>
+		<date>2006</date>
+	</meta>
+
+	<chapter number="1" title="Chapter One - Where My Life is a Case Study for Chaos Theory">
+		<p>If you ever wondered about chaos theory then you haven't met me. 
+		I am the embodiment of chaos, from my desktop to underneath my car seat.
+		</p>
+	</chapter>
+
+	<chapter number="2" title="Chapter Two - Where I Discover the Beauty of XML">
+		<p>One day, as I was walking down the road, with bits of flutter, clutter, and chaos 
+		drifting off behind me, I saw a box laying in the middle of the road. Inside was all
+		the neatness and orderliness of XML - everything was arranged and cosy inside those
+		cute little brackets. This was the day that my life changed.
+		</p>
+	</chapter>
+</article>

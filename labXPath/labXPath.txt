@@ -1,0 +1,22 @@
+//catalog/cd = Matches CD element - displays all sub-elements under it except title
+//catalog/cd/title = Got 12 matches - Won't display any data. Just the number.
+//catalog/cd/artist = Matched all artist elements - Displays all sub-elements too
+//catalog/cd/atist/* = Matches only what's under the <artist> element. 36 matches because 3 elements for each artist
+Difference between the two = The first query puts all the elements under each artist element in one result. The second one makes an individual result for each sub-element of <artist>.
+
+Finding Text
+//catalog/cd/title/text() = The data in the <title> element. 
+Is there a difference? = Yes, //catalog/cd/title has 12 matches but doesn't display anything. cd/title/text() displays the <title> data correctly.
+Display the contents of the data in artist/name = //catalog/cd/artist/name
+
+Finding Attributes
+//catalog/cd/@type = 3 results are returned because only 3 cd elements have the 'type' element.
+Display the contents of the attribute TYPE = //@type
+Notice what data is missing. = The query only shows <cd> elements that have any attributes.
+//catalog/cd[@format='MAC'] = Only one result because the other MAC format CD has spaces surrounding the attribute data.
+//catalog/cd[@format='mac'] = No results found. Conclusion: query is case-sensitive.
+
+Compound Paths
+//catalog//artist | //catalog/year = 24 results. The matches are a result of 2 queries at once, alternating the results between the queries.
+Show contents of the <year> element = //catalog//year
+Show contents of the year and sub-elements of artist name = //catalog//year | //catalog/cd/artist/name/*

@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<!--
+			prjXPath.html - Project: XPath - Due 3/1/15
+			by: Dan Salmon (dan.sa7mon[at]gmail.com)
+			Created: 2/17/15
+			Last Updated: 2/17/15
+		-->
+		<title></title>
+		<style type="text/css">
+			body {
+				background: gray;
+				font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+			}
+			section {
+				width: 75%;
+				margin: auto;
+				background-color: white;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				padding-left: 5px;
+				margin-top: 20px;
+				border-radius: 10px;
+			}
+			h3,h1 {
+				text-align: center;
+			}
+			table {
+				margin: auto;
+				width: 80%;
+			}
+		</style>
+	</head>
+	<body>
+		<section id="title">
+			<h1>prjXPath</h1>
+		</section>	
+		<section id="table">
+			<table border="1">
+				<tr>
+					<th>Change the path statement to each of these</th>
+					<th>Write down the specific results</th>
+				</tr>
+				<tr>
+					<td colspan="2"><strong>Finding Elements</strong></td>
+				</tr>
+				<tr>
+					<td>//catalog/cd</td>
+					<td>Matches CD element - displays all sub-elements under it except title</td>
+				</tr>	
+				<tr>
+					<td>//catalog/cd/title</td>
+					<td>Got 12 matches - Won't display any data. Just the number.</td>
+				</tr>	
+				<tr>
+					<td>//catalog/cd/artist</td>
+					<td>Matched all artist elements - Displays all sub-elements too.</td>
+				</tr>
+				<tr>
+					<td>//catalog/cd/atist/*</td>
+					<td>Matches only what's under the &lt;artist&gt; element. 36 matches because 3 elements for each artist</td>
+				</tr>	
+				<tr>
+					<td>What's the difference between cd/artist and cd/artist/*?</td>
+					<td>The first query puts all the elements under each artist element in one result. The second one makes an individual result for each sub-element of &lt;artist&gt;.</td>
+				</tr>
+				<tr>
+					<td>//catalog/cd[2] - Double check! Which element number is this?</td>
+					<td></td>
+				</tr>	
+			</table>
+		</section>
+	</body>
+</html>

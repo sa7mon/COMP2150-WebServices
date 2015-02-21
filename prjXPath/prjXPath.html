@@ -4,7 +4,7 @@
 			prjXPath.html - Project: XPath - Due 3/1/15
 			by: Dan Salmon (dan.sa7mon[at]gmail.com)
 			Created: 2/17/15
-			Last Updated: 2/19/15
+			Last Updated: 2/21/15
 		-->
 		<title></title>
 		<style type="text/css">
@@ -29,6 +29,10 @@
 				margin: auto;
 				width: 80%;
 			}
+			img {
+				width: 60px;
+				height: 50px;
+			}
 		</style>
 	</head>
 	<body>
@@ -48,52 +52,52 @@
 				<tr>
 					<td>1. <pre>//catalog/cd/artist/*</pre></td>
 					<td>Matches only what's under the &lt;artist&gt; element. 36 matches because 3 elements for each artist</td>
-               <td><a href="images/1.png">Image</a></td>
+               <td><a href="images/1.png"><img src="images/1.png" alt="Screenshot1"/></a></td>
 				</tr>	
 				<tr>
 					<td>2. <pre>//catalog/cd[2]</pre></td>
 					<td>Returns 1 match: the second &lt;cd&gt; element</td>
-               <td><a href="images/2.png">Image</a></td>
+               <td><a href="images/2.png"><img src="images/2.png" alt="Screenshot2"/></a></td>
 				</tr>	
 				<tr>
 					<td>3. <pre>//catalog/cd/title/text()</pre></td>
 					<td>12 matches - Displays the text of all of the titles.</td>
-               <td><a href="images/3.png">Image</a></td>
+               <td><a href="images/3.png"><img src="images/3.png" alt="Screenshot3"/></a></td>
 				</tr>
 				<tr>
 					<td>4. What is the xpath to display the contents of the data in: artist/name</td>
 					<td><pre>//catalog/cd/artist/name/text()</pre></td>
-               <td><a href="images/4.png">Image</a></td>
+               <td><a href="images/4.png"><img src="images/4.png" alt="Screenshot4"/></a></td>
             </tr>	
 				<tr>
 					<td>5. <pre>//catalog/cd/@type</pre> - How many items show up? Why is that?</td>
 					<td>3 results because there are only 3 cd elements with the 'type' attribute.</td>
-               <td><a href="images/5.png">Image</a></td>
+               <td><a href="images/5.png"><img src="images/5.png" alt="Screenshot5"/></a></td>
             </tr>
 				<tr>
 					<td>6. <pre>//catalog/cd[@*]</pre> - What data is missing?</td>
 					<td>The &lt;cd&gt; elements that don't have any attributes.</td>
-               <td><a href="images/6.png">Image</a></td>
+               <td><a href="images/6.png"><img src="images/6.png" alt="Screenshot6"/></a></td>
 				</tr>	
             <tr>
                <td>7. <pre>//catalog/cd[@format='MAC']</pre> - what doesn't show up? Why not?</td>
                <td>The other format value that's 'mac' has spaces around the value.</td>
-               <td><a href="iamges/7.png">Image</a></td>
+               <td><a href="iamges/7.png"><img src="images/7.png" alt="Screenshot7"/></a></td>
             </tr>
             <tr>
                <td>8. <pre>//catalog/cd[@format='mac']</pre></td>
                <td>No matches. Conclusion: The query is case-sensitive.</td>
-               <td><a href="images/8.png">Image</a></td>
+               <td><a href="images/8.png"><img src="images/8.png" alt="Screenshot8"/></a></td>
             </tr>
             <tr>
                <td>9. Show contents of the <year> element</td>
                <td><pre>//catalog/cd/year/text()</pre></td>
-               <td><a href="images/9.png">Image</a></td>
+               <td><a href="images/9.png"><img src="images/9.png" alt="Screenshot9"/></a></td>
             </tr>
             <tr>
                <td>10. Show contents of year and sub-elements of artist name.</td>
                <td><pre>//catalog/cd/year/text() | //catalog/cd/artist/name/text()</pre></td>
-               <td><a href="images/10.png">Image</a></td>
+               <td><a href="images/10.png"><img src="images/10.png" alt="Screenshot10"/></a></td>
             </tr>
 			</table>
 		</section>

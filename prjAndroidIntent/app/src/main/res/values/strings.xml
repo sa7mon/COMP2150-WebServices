@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">prjAndroidIntent</string>
+    <string name="app_name">Strong Password Generator</string>
     <string name="action_settings">Settings</string>
 
     <string name="strLowercase">Lowercase Letters</string>

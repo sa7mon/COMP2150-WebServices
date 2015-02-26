@@ -33,6 +33,13 @@
             android:layout_height="match_parent"
             android:text="@string/strSymbols"
             android:onClick="onCheckboxClicked" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate Password"
+            android:id="@+id/btnGenerate"
+            android:onClick="" />
     </LinearLayout>
 
 </RelativeLayout>

@@ -17,12 +17,22 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/strLowercase"
-            android:onClick="" />
+            android:onClick="onCheckboxClicked" />
         <CheckBox
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Uppercase Letters"
-            android:onClick="" />
+            android:text="@string/strUppercase"
+            android:onClick="onCheckboxClicked" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/strNumbers"
+            android:onClick="onCheckboxClicked" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/strSymbols"
+            android:onClick="onCheckboxClicked" />
     </LinearLayout>
 
 </RelativeLayout>

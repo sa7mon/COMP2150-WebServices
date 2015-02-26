@@ -4,6 +4,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.CheckBox;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -35,5 +37,22 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    //------------------------------ MY FUNCTIONS ----------------------------------
+    public void onCheckboxClicked(View view) {
+        // Check the state of the checkbox
+        boolean isChecked = ((CheckBox) view).isChecked();
+
+        // Figure out which checkbox was clicked
+        switch(view.getId()) {
+            case R.id.chkLowercase:
+                if (isChecked) {
+                    // Checkbox is checked.
+
+                } else {
+                    //Checkbox is not checked.
+                }
+        }
     }
 }

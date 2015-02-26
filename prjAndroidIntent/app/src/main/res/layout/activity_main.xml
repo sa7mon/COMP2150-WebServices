@@ -10,14 +10,19 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <CheckBox android:id="@+id/chkLowercase"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:text="@string/strLowercase"
-            android:onClick=""
-        />
-        </LinearLayout>
+            android:onClick="" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Uppercase Letters"
+            android:onClick="" />
+    </LinearLayout>
 
 </RelativeLayout>

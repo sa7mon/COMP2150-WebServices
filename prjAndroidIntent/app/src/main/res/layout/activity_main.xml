@@ -22,21 +22,23 @@
             android:text="@string/strLowercase"
             android:onClick="onCheckboxClicked" />
         <CheckBox
+            android:id="@+id/chkUppercase"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/strUppercase"
             android:onClick="onCheckboxClicked" />
         <CheckBox
+            android:id="@+id/chkNumbers"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/strNumbers"
             android:onClick="onCheckboxClicked" />
         <CheckBox
+            android:id="@+id/chkSymbols"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/strSymbols"
             android:onClick="onCheckboxClicked" />
-
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

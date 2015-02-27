@@ -6,6 +6,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.CheckBox;
+import android.content.Intent;
+
 
 
 public class MainActivity extends ActionBarActivity {
@@ -54,5 +56,11 @@ public class MainActivity extends ActionBarActivity {
                     //Checkbox is not checked.
                 }
         }
+    }
+
+    public void clickGenerate(View view) {
+        // Tell Java which activity we want to launch
+        Intent generateIntent = new Intent(this,Results.class);
+        startActivity(generateIntent);
     }
 }

@@ -43,6 +43,6 @@
             android:layout_gravity="center"
             android:text="Generate Password"
             android:id="@+id/btnGenerate"
-            android:onClick="" />
+            android:onClick="clickGenerate" />
     </LinearLayout>
 </RelativeLayout>

@@ -12,6 +12,14 @@ import android.content.Intent;
 
 public class MainActivity extends ActionBarActivity {
 
+    // Setup my variables
+    final String LOWER_LETTERS = "abcdefghijklmnopqrstuvwxyz";
+    final String UPPER_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    final String NUMBERS = "01234567989";
+    final String SYMBOLS = "!@#$%^&*()-_=+[]{}|<>,.?";
+
+    String strPool = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,16 +59,26 @@ public class MainActivity extends ActionBarActivity {
             case R.id.chkLowercase:
                 if (isChecked) {
                     // Checkbox is checked.
-
+                    System.out.println("chkLowercase: checked.");
                 } else {
                     //Checkbox is not checked.
+                    System.out.println("chkLowercase: unchecked.");
                 }
+                break;
+            case R.id.chkUppercase:
+                if (isChecked) {
+                    System.out.println("chkUppercase: checked.");
+                } else {
+                    System.out.println("chkUppercase: unchecked.");
+                }
+                break;
         }
     }
 
     public void clickGenerate(View view) {
         // Tell Java which activity we want to launch
         Intent generateIntent = new Intent(this,Results.class);
+        // Switch screens just like we told it above.
         startActivity(generateIntent);
     }
 }

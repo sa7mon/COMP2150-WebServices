@@ -1,9 +1,12 @@
 <resources>
-    <string name="app_name">Strong Password Generator</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">Strong Password Generator                </string>
+<string name="action_settings">Settings</string>
 
-    <string name="strLowercase">Lowercase Letters</string>
-    <string name="strUppercase">Uppercase Letters</string>
-    <string name="strNumbers">Numbers</string>
-    <string name="strSymbols">Symbols</string>
-</resources>
+<string name="strLowercase">Lowercase Letters</string>
+<string name="strUppercase">Uppercase Letters</string>
+<string name="strNumbers">Numbers</string>
+<string name="strSymbols">Symbols</string>
+    <string name="title_activity_results">Results</string>
+
+    <string name="hello_world">Hello world!</string>
+    </resources>

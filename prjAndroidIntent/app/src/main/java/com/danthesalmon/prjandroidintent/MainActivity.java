@@ -60,17 +60,48 @@ public class MainActivity extends ActionBarActivity {
                 if (isChecked) {
                     // Checkbox is checked.
                     System.out.println("chkLowercase: checked.");
+                    strPool = strPool.concat(LOWER_LETTERS);
                 } else {
                     //Checkbox is not checked.
                     System.out.println("chkLowercase: unchecked.");
+                    strPool = strPool.replace(LOWER_LETTERS, "");
                 }
+                System.out.println("strPool: " + strPool);
                 break;
             case R.id.chkUppercase:
                 if (isChecked) {
+                    // chkUppercase has been checked.
                     System.out.println("chkUppercase: checked.");
+                    strPool = strPool.concat(UPPER_LETTERS);
                 } else {
                     System.out.println("chkUppercase: unchecked.");
+                    strPool = strPool.replace(UPPER_LETTERS, "");
                 }
+                System.out.println("strPool: " + strPool);
+                break;
+            case R.id.chkNumbers:
+                if (isChecked) {
+                    // chkNumbers has been checked.
+                    System.out.println("chkNumbers: checked.");
+                    strPool = strPool.concat(NUMBERS);
+                } else {
+                    // chkNumbers has been unchecked.
+                    System.out.println("chkNumbers: unchecked");
+                    strPool = strPool.replace(NUMBERS, "");
+                }
+                System.out.println("strPool: " + strPool);
+                break;
+            case R.id.chkSymbols:
+                if (isChecked) {
+                    // chkSymbols has been checked.
+                    System.out.println("chkSymbols: checked.");
+                    strPool = strPool.concat(SYMBOLS);
+                } else {
+                    // chkSymbols has been unchecked
+                    System.out.println("chkSymbols: unchecked");
+                    strPool = strPool.replace(SYMBOLS, "");
+                }
+                System.out.println("strPool: " + strPool);
                 break;
         }
     }

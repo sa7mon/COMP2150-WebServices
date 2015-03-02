@@ -19,7 +19,7 @@ public class MainActivity extends ActionBarActivity {
     final String NUMBERS = "01234567989";
     final String SYMBOLS = "!@#$%^&*()-_=+[]{}|<>,.?";
 
-    private static final String TAG = "PWDGEN";
+    public static final String TAG = "PWDGEN";
 
     String strPool = "";
 
@@ -112,6 +112,10 @@ public class MainActivity extends ActionBarActivity {
     public void clickGenerate(View view) {
         // Tell Java which activity we want to launch
         Intent generateIntent = new Intent(this,Results.class);
+
+        // Send the strPool string along to the other activity (Results).
+        generateIntent.putExtra("pool",strPool);
+
         // Switch screens just like we told it above.
         startActivity(generateIntent);
     }

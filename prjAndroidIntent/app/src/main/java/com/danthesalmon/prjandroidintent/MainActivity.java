@@ -2,6 +2,7 @@ package com.danthesalmon.prjandroidintent;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -17,6 +18,8 @@ public class MainActivity extends ActionBarActivity {
     final String UPPER_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     final String NUMBERS = "01234567989";
     final String SYMBOLS = "!@#$%^&*()-_=+[]{}|<>,.?";
+
+    private static final String TAG = "PWDGEN";
 
     String strPool = "";
 
@@ -59,49 +62,49 @@ public class MainActivity extends ActionBarActivity {
             case R.id.chkLowercase:
                 if (isChecked) {
                     // Checkbox is checked.
-                    System.out.println("chkLowercase: checked.");
+                    Log.d(TAG, "chkLowercase: checked.");
                     strPool = strPool.concat(LOWER_LETTERS);
                 } else {
                     //Checkbox is not checked.
-                    System.out.println("chkLowercase: unchecked.");
+                    Log.d(TAG,"chkLowercase: unchecked.");
                     strPool = strPool.replace(LOWER_LETTERS, "");
                 }
-                System.out.println("strPool: " + strPool);
+                Log.d(TAG,"strPool: " + strPool);
                 break;
             case R.id.chkUppercase:
                 if (isChecked) {
                     // chkUppercase has been checked.
-                    System.out.println("chkUppercase: checked.");
+                    Log.d(TAG,"chkUppercase: checked.");
                     strPool = strPool.concat(UPPER_LETTERS);
                 } else {
-                    System.out.println("chkUppercase: unchecked.");
+                    Log.d(TAG,"chkUppercase: unchecked.");
                     strPool = strPool.replace(UPPER_LETTERS, "");
                 }
-                System.out.println("strPool: " + strPool);
+                Log.d(TAG,"strPool: " + strPool);
                 break;
             case R.id.chkNumbers:
                 if (isChecked) {
                     // chkNumbers has been checked.
-                    System.out.println("chkNumbers: checked.");
+                    Log.d(TAG,"chkNumbers: checked.");
                     strPool = strPool.concat(NUMBERS);
                 } else {
                     // chkNumbers has been unchecked.
-                    System.out.println("chkNumbers: unchecked");
+                    Log.d(TAG,"chkNumbers: unchecked");
                     strPool = strPool.replace(NUMBERS, "");
                 }
-                System.out.println("strPool: " + strPool);
+                Log.d(TAG,"strPool: " + strPool);
                 break;
             case R.id.chkSymbols:
                 if (isChecked) {
                     // chkSymbols has been checked.
-                    System.out.println("chkSymbols: checked.");
+                    Log.d(TAG,"chkSymbols: checked.");
                     strPool = strPool.concat(SYMBOLS);
                 } else {
                     // chkSymbols has been unchecked
-                    System.out.println("chkSymbols: unchecked");
+                    Log.d(TAG,"chkSymbols: unchecked");
                     strPool = strPool.replace(SYMBOLS, "");
                 }
-                System.out.println("strPool: " + strPool);
+                Log.d(TAG,"strPool: " + strPool);
                 break;
         }
     }

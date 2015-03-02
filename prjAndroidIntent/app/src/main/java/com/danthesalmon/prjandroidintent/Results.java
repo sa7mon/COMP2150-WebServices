@@ -49,7 +49,7 @@ public class Results extends ActionBarActivity {
         // Until the StringBuffer is filled to capacity, do the following
         for (int i=0; i<length; i++) {
             // Get the character from charList at location specified by a random number
-            char randChar = charList.charAt(rndGen.nextInt(length));
+            char randChar = charList.charAt(rndGen.nextInt(charList.length()));
             // Add this random char to the StringBuffer
             sbRandString.append(randChar);
         }

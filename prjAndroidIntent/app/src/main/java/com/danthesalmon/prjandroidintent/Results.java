@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import java.util.Random;
+
 
 public class Results extends ActionBarActivity {
 
@@ -24,8 +26,39 @@ public class Results extends ActionBarActivity {
         randPool = mainActivityIntent.getStringExtra("pool");
         // Log it to see if we get the right data sent through
         Log.d(MainActivity.TAG,"[Results] Pool: " + randPool);
+        Log.d(MainActivity.TAG, "[Results] Random Password: " + generateRandStr(10,randPool));
 
     }
+
+
+
+
+    static Random rndGen = new Random();
+    /**
+     *  generateRandStr() - The function that does the generating.
+     *  @param length - How many characters long we want the string to be.
+     *  @param charList - The allowed charactes to generate the string from.
+     * @return randStr - The random string at the specified length.
+     *
+     */
+    public String generateRandStr(int length,String charList) {
+
+        // Create a new StringBuffer with capacity @param:length
+        StringBuffer sbRandString = new StringBuffer(length);
+
+        // Until the StringBuffer is filled to capacity, do the following
+        for (int i=0; i<length; i++) {
+            // Get the character from charList at location specified by a random number
+            char randChar = charList.charAt(rndGen.nextInt(length));
+            // Add this random char to the StringBuffer
+            sbRandString.append(randChar);
+        }
+        // Return the randomly generated string.
+        return sbRandString.toString();
+    }
+
+
+
 
 
     @Override

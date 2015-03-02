@@ -6,12 +6,12 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import com.danthesalmon.prjandroidintent.MainActivity;
 
 public class Results extends ActionBarActivity {
 
     // Declare variables
     String randPool = "";
+    private static final int PASSWORD_LENGTH = 10; //TODO Hardcode this for now but make option
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

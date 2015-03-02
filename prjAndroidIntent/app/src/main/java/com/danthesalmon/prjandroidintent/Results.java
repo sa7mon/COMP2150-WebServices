@@ -1,17 +1,30 @@
 package com.danthesalmon.prjandroidintent;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-
+import com.danthesalmon.prjandroidintent.MainActivity;
 
 public class Results extends ActionBarActivity {
+
+    // Declare variables
+    String randPool = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
+
+        // Get the intent that spawned this activity.
+        Intent mainActivityIntent = getIntent();
+        // Get the information from sent to us through the intent from MainActivity
+        randPool = mainActivityIntent.getStringExtra("pool");
+        // Log it to see if we get the right data sent through
+        Log.d(MainActivity.TAG,"[Results] Pool: " + randPool);
+
     }
 
 

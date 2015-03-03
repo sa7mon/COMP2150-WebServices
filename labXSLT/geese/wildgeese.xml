@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<poem>
+  <author>Mary Oliver</author>
+  <date>unknown</date>
+  <from>Dream Work</from>
+  <title>Wild Geese</title>
+  <photo>maryOliverPercy.jpg</photo>
+  <description>Mary Oliver with her dog Percy</description>
+
+  <stanza>
+    <line style="bold"  selected="true" wordCount="7">You do not have to be good.</line>
+    <line style="normal" wordCount="9">You do not have to walk on your knees</line>
+    <line style="normal" wordCount="8">for a hundred miles through the desert, repenting.</line>
+  </stanza>
+  <stanza>
+    <line style="bold" selected="true" wordCount="11">You only have to let the soft animal of your body</line>
+    <line style="normal" wordCount="4">love what it loves.</line>
+  </stanza>
+  <stanza>
+    <line style="bold" selected="true" wordCount="12">
+       Tell me about your despair, yours, and I will tell you mine.
+    </line>
+    <line style="normal" wordCount="5">Meanwhile the world goes on.</line>
+    <line style="normal" wordCount="10">Meanwhile the sun and the clear pebbles of the rain</line>
+    <line style="normal" wordCount="5">are moving across the landscapes,</line>
+    <line style="normal" wordCount="7">over the prairies and the deep trees,</line>
+    <line style="normal" wordCount="5">the mountains and the rivers.</line>
+    <line style="normal" wordCount="10">Meanwhile the wild geese, high in the clean blue air,</line>
+    <line style="normal" wordCount="4">are heading home again.</line>
+    <line style="normal" wordCount="7">Whoever you are, no matter how lonely,</line>
+    <line style="normal" wordCount="7">the world offers itself to your imagination,</line>
+    <line style="normal" wordCount="10">calls to you like the wild geese, harsh and exciting -</line>
+    <line style="normal" wordCount="6">over and over announcing your place</line>
+    <line style="normal" wordCount="5">in the family of things.</line>
+  </stanza>
+
+</poem>

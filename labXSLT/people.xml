@@ -1,0 +1,44 @@
+﻿<?xml version="1.0"?>
+
+<!-- *********** Resumes for People *********** -->
+<people>
+  <person personID="p1">
+    <name>Mark Wilson</name>
+    <address>911 Somewhere Circle, Canberra, Australia</address>
+    <tel>(++612) 12345</tel>
+    <fax>(++612) 12345</fax>
+    <email>markwilson@somewhere.com</email>
+  </person>
+
+  <person personID="p2">
+    <name>Tracey Wilson</name>
+    <address>121 Zootle Road, Cape Town, South Africa</address>
+    <tel>(++2721) 531 9090</tel>
+    <fax>(++2721) 531 9090</fax>
+    <email>Tracey Wilson@somewhere.com</email>
+  </person>
+
+  <person personID="p3">
+    <name>Jodie Foster</name>
+    <address>30 Animal Road, New York, USA</address>
+    <tel>(++1) 3000 12345</tel>
+    <fax>(++1) 3000 12345</fax>
+    <email>Jodie Foster@somewhere.com</email>
+  </person>
+
+  <person personID="p4">
+    <name>Lorrin Maughan</name>
+    <address>1143 Winners Lane, London, UK</address>
+    <tel>(++94) 17 12345</tel>
+    <fax>(++94) 17 12345</fax>
+    <email>Lorrin Maughan@somewhere.com</email>
+  </person>
+
+  <person personID="p5">
+    <name>Steve Rachel</name>
+    <address>90210 Beverly Hills, California, USA</address>
+    <tel>(++1) 2000 12345</tel>
+    <fax>(++1) 2000 12345</fax>
+    <email>Steve Rachel@somewhere.com</email>
+  </person>
+</people>

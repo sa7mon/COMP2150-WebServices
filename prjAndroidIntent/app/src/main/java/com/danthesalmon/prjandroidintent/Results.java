@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+
 import java.util.Random;
 
 
@@ -24,11 +26,16 @@ public class Results extends ActionBarActivity {
         randPool = mainActivityIntent.getStringExtra("pool");
         // Log it to see if we get the right data sent through
         Log.d(MainActivity.TAG,"[Results] Pool: " + randPool);
-        Log.d(MainActivity.TAG, "[Results] Random Password: " + generateRandStr(10,randPool));
+        Log.d(MainActivity.TAG, "[Results] Random Password: " + generateRandStr(PASSWORD_LENGTH,randPool));
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
 
+        // Reference our textview so we can change the properties of it.
+        final TextView tvPassword = (TextView) findViewById(R.id.tvPassword);
+
+        // Set the text of tvPassword to the result of generating a new random string
+        tvPassword.setText(generateRandStr(PASSWORD_LENGTH, randPool));
     }
 
 
@@ -45,7 +52,7 @@ public class Results extends ActionBarActivity {
     public String generateRandStr(int length,String charList) {
 
         // Create a new StringBuffer with capacity @param:length
-        StringBuffer sbRandString = new StringBuffer(length);
+        StringBuilder sbRandString = new StringBuilder(length);
 
         // Until the StringBuffer is filled to capacity, do the following
         for (int i=0; i<length; i++) {

@@ -38,10 +38,6 @@ public class Results extends ActionBarActivity {
         tvPassword.setText(generateRandStr(PASSWORD_LENGTH, randPool));
     }
 
-
-
-
-    static Random rndGen = new Random();
     /**
      *  generateRandStr() - The function that does the generating.
      *  @param length - How many characters long we want the string to be.
@@ -49,7 +45,10 @@ public class Results extends ActionBarActivity {
      * @return randStr - The random string at the specified length.
      *
      */
-    public String generateRandStr(int length,String charList) {
+    private String generateRandStr(int length,String charList) {
+
+        // Instantiate a new Random object. It will give us random ints with a specified ceiling.
+        Random rndGen = new Random();
 
         // Create a new StringBuffer with capacity @param:length
         StringBuffer sbRandString = new StringBuffer(length);

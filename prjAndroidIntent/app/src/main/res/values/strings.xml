@@ -7,5 +7,4 @@
     <string name="strSymbols">Symbols</string>
     <string name="title_activity_results">Results</string>
     <string name="strResultsPassword">Password</string>
-    <string name="strGeneratePassword">Generate Password</string>
 </resources>

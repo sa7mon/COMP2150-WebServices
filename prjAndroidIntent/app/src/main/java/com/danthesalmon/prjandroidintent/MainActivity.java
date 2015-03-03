@@ -14,14 +14,14 @@ import android.content.Intent;
 public class MainActivity extends ActionBarActivity {
 
     // Setup my variables
-    private final String LOWER_LETTERS = "abcdefghijklmnopqrstuvwxyz";
-    private final String UPPER_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    private final String NUMBERS = "01234567989";
-    private final String SYMBOLS = "!@#$%^&*()-_=+[]{}|<>,.?";
+    final String LOWER_LETTERS = "abcdefghijklmnopqrstuvwxyz";
+    final String UPPER_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    final String NUMBERS = "01234567989";
+    final String SYMBOLS = "!@#$%^&*()-_=+[]{}|<>,.?";
 
     public static final String TAG = "PWDGEN";
 
-    private String strPool = "";
+    String strPool = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

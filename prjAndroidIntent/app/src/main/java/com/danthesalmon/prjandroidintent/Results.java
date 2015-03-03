@@ -14,7 +14,7 @@ import java.util.Random;
 public class Results extends ActionBarActivity {
 
     // Declare variables
-    private String randPool = "";
+    String randPool = "";
     private static final int PASSWORD_LENGTH = 10; //TODO Hardcode this for now but make option
 
     @Override
@@ -41,7 +41,7 @@ public class Results extends ActionBarActivity {
 
 
 
-    private static final Random rndGen = new Random();
+    static Random rndGen = new Random();
     /**
      *  generateRandStr() - The function that does the generating.
      *  @param length - How many characters long we want the string to be.
@@ -52,7 +52,7 @@ public class Results extends ActionBarActivity {
     public String generateRandStr(int length,String charList) {
 
         // Create a new StringBuffer with capacity @param:length
-        StringBuilder sbRandString = new StringBuilder(length);
+        StringBuffer sbRandString = new StringBuffer(length);
 
         // Until the StringBuffer is filled to capacity, do the following
         for (int i=0; i<length; i++) {

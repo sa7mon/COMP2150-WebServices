@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <!-- *** Step #1*** Set up a namespace so parser knows which version of XSLT to use
              Don't forget the stop tag at the bottom of this XML document!!! -->
+<xsl:stylesheet xmlns:xsl="http://www.w2.org/1999/XSL/Transform" version="2.0">
 
 <!-- IMPORTANT CONCEPT: elements that are not part of the namespace will be output
      without being modified.
@@ -12,6 +13,7 @@
 
 <!-- *** Step #2 *** select all of the elements starting from the root 
              Don't forget the stop tag at the bottom of this XML document!!! -->
+<xsl:template match="/">
 
 <html>
 <body>
@@ -51,5 +53,5 @@
 </table>
 </body>
 </html>
-<!-- *** Step #2 *** the stop tag for the template tag goes here. -->
-<!-- *** Step #1 *** the stop tag for the stylesheet goes here. -->
+</xsl:template>
+</xsl:stylesheet>

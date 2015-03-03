@@ -17,8 +17,6 @@ public class Results extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_results);
 
         // Get the intent that spawned this activity.
         Intent mainActivityIntent = getIntent();
@@ -27,6 +25,9 @@ public class Results extends ActionBarActivity {
         // Log it to see if we get the right data sent through
         Log.d(MainActivity.TAG,"[Results] Pool: " + randPool);
         Log.d(MainActivity.TAG, "[Results] Random Password: " + generateRandStr(10,randPool));
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_results);
 
     }
 
@@ -56,10 +57,6 @@ public class Results extends ActionBarActivity {
         // Return the randomly generated string.
         return sbRandString.toString();
     }
-
-
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

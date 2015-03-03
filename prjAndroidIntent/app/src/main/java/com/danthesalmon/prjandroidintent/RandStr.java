@@ -12,14 +12,22 @@ import java.util.Random;
  */
 public class RandStr {
 
+    // =========== GLOBAL VARIABLES ================
+    final int DEFAULT_LENGTH = 10; // The length of the string to default to
+
+
     // ============ CONSTRUCTOR METHODS ============
 
     /**
+     * RandStr() - The first constructor methods. Accepts no arguments and assumes everything.
      *
+     * @param - A String containing the characters to use for the random string.
+     * @return - A String of DEFAULT_LENGTH length of random characters.
      */
-    public RandStr () {
+    public String RandStr (String charList) {
+        String randomString = generateRandStr(DEFAULT_LENGTH,charList);
 
-
+        return randomString;
     }
 
 

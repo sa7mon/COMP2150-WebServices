@@ -32,10 +32,10 @@ public class Results extends ActionBarActivity {
         setContentView(R.layout.activity_results);
 
         // Reference our textview so we can change the properties of it.
-        final TextView tvPassword = (TextView) findViewById(R.id.tvPassword);
+        final TextView etPassword = (TextView) findViewById(R.id.etPassword);
 
         // Set the text of tvPassword to the result of generating a new random string
-        tvPassword.setText(generateRandStr(PASSWORD_LENGTH, randPool));
+        etPassword.setText(generateRandStr(PASSWORD_LENGTH, randPool));
     }
 
     /**

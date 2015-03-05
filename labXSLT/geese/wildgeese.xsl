@@ -49,10 +49,22 @@
         <p>Published on: <xsl:value-of select="poem/date" /></p>
         <p>Published in: <xsl:value-of select="poem/from" /></p>
         <hr /><br />
-        ??Call the stanza "subroutine" for each stanza ??
+        <xsl:apply-templates select="poem/stanza" />
         
      </body>
    </html>
 </xsl:template> 
+
+<xsl:template match="stanza">
+  <p>
+    <xsl:apply-templates select="line" />
+  </p>
+</xsl:template>
+
+<xsl:template match="line">
+  <!-- output the actual line -->
+  <xsl:value-of select="."/>
+  <br />
+</xsl:template>
 
 </xsl:stylesheet>

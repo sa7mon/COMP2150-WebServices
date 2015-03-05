@@ -44,10 +44,19 @@
         android:text="@string/strSymbols"
         android:onClick="onCheckboxClicked" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Length"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal" />
+
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_gravity="center_horizontal"
         android:text="Generate Password"
         android:id="@+id/btnGenerate"
         android:onClick="clickGenerate" />

@@ -40,10 +40,12 @@
     }   
     img {
     padding:     25px;
+    float:       left;
     }        
     </style> 
     </head>
     <body>
+        <img src="mary.jpg" />
         <h1><xsl:value-of select="poem/title" /></h1>
         <h2>by <xsl:value-of select="poem/author" /></h2>
         <p>Published on: <xsl:value-of select="poem/date" /></p>

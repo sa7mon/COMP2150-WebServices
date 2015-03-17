@@ -11,11 +11,33 @@
 
 		<html>
 			<head>
+				<title>Feedback for <xsl:value-of select="title" /></title>
+				<style type="text/css">
 
+				</style>
 			</head>
 			<body>
+				<!-- 
+					boldComment.html
+					Created: 3/17/15
+				-->
+				<h1>
+					<xsl:value-of select="title" />
+				</h1>
+				<h2>
+					<xsl:value-of select="summary" />
+				</h2>
 
+				<xsl:comment>
+					Loop through every "item" object.
+				</xsl:comment>
+				<xsl:apply-templates/>
 			</body>
 		</html>
 	</xsl:template>
+
+	<xsl:template match="item">
+		<xsl:value-of select="objective" />
+	</xsl:template>
+
 </xsl:stylesheet>

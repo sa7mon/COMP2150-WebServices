@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Characters"
-        android:id="@+id/textView2"
+        android:id="@+id/tvCharactersLabel"
         android:layout_gravity="center_horizontal" />
 
     <CheckBox android:id="@+id/chkLowercase"
@@ -44,20 +44,14 @@
         android:text="@string/strSymbols"
         android:onClick="onCheckboxClicked" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Length"
-        android:id="@+id/textView3"
-        android:layout_gravity="center_horizontal" />
-
+    <!-- NUMBER PICKER GOES HERE -->
+    <!-- NUMBER PICKER ENDS HERE -->
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Generate Password"
+        android:text="@string/strGeneratePassword"
         android:id="@+id/btnGenerate"
         android:onClick="clickGenerate" />
 </LinearLayout>

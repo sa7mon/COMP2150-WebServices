@@ -26,4 +26,22 @@
         android:text="@string/strResultsPassword"
         android:focusable="false"
         android:layout_marginTop="150dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="135dp"
+        android:minWidth="200dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/strNavigate"
+        android:id="@+id/button"
+        android:layout_alignTop="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp" />
 </RelativeLayout>

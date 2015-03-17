@@ -1,11 +1,15 @@
 package com.danthesalmon.prjandroidintent;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import java.util.Random;
@@ -16,6 +20,8 @@ public class Results extends ActionBarActivity {
     // Declare variables
     String randPool = "";
     private static final int PASSWORD_LENGTH = 10; //TODO Hardcode this for now but make option
+    EditText etUrl;
+    Button btnNavigate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +42,21 @@ public class Results extends ActionBarActivity {
 
         // Set the text of tvPassword to the result of generating a new random string
         etPassword.setText(generateRandStr(PASSWORD_LENGTH, randPool));
+
+        // Make connection to the editText and button so later we can get the value.
+        etUrl = (EditText)findViewById(R.id.etUrl);
+        btnNavigate = (Button)findViewById(R.id.btnNavigate);
+
+        btnNavigate.setOnClickListener(
+                new View.OnClickListener() {
+                    public void onClick(View view) {
+                        // Do something on click.
+                        Intent iNavigate = new Intent(Intent.ACTION_VIEW);
+                        iNavigate.setData(Uri.parse(etUrl.getText().toString()));
+                        startActivity(iNavigate);
+                    }
+                }
+        );
     }
 
     /**

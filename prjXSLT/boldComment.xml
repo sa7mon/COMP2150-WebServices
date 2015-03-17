@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XMLData>
+  <userid>12345</userid>
+  <origDate>01/01/2028</origDate>
+  <revDate>02/02/2028</revDate>
+  <revTime>14:00</revTime>
+  <title>Project:Vector</title>
+  <summary>Sally, Nice work.</summary>
+  <item>
+    <objective pointValue="0" selected="true">#1 What does addElement( ) replace?</objective>
+    <referenceNumber>001</referenceNumber>
+    <comment pointValue="2" selected="true">Total Points</comment>
+    <comment pointValue="0" selected="false">Good Explanation</comment>
+    <comment pointValue="-1" selected="false">You have the syntax on your addElement( ) incorrect. Next time use the API as a reference.</comment>
+    <comment pointValue="-2" selected="true">You did not answer the question.</comment>
+  </item>
+  <item>
+    <objective pointValue="0" selected="true">#2 How does the binary algorithm work?</objective>
+    <referenceNumber>888</referenceNumber>
+    <comment pointValue="2" selected="true">Total Points</comment>
+    <comment pointValue="0" selected="false">Good explanation</comment>
+    <comment pointValue="0" selected="true">The binary algorithm works like 21 Questions. A list is divided in half and it is determined if the answer is below or above the mid point. This is done until a match is found.</comment>
+    <comment pointValue="-1" selected="false">Your explanation was very muddy. Here's another way to say it: The binary algorithm works like 21 Questions. A list is divided in half and it is determined if the answer is below or above the mid point. This is done until a match is found.
+
+Instead of using a pronoun such as "it" call things by their name to make your explanations clearer</comment>
+    <comment pointValue="-2" selected="true">not found</comment>
+  </item>
+  <item>
+    <objective pointValue="0" selected="true">#3 What type of sort is this? Why is it used in this program instead of other sorts?</objective>
+    <referenceNumber>888</referenceNumber>
+    <comment pointValue="4" selected="true">Total Points</comment>
+    <comment pointValue="0" selected="false">Good explanation</comment>
+    <comment pointValue="-4" selected="false">The question is why did you use the selection sort instead of another type of sort?
+Your answer should show your understanding of the pros/cons of different types of sorts.</comment>
+    <comment pointValue="0" selected="false">You are very correct, you could use a binary search on this, but it is hardly worth the effort because the data set is so small.</comment>
+    <comment pointValue="-4" selected="true">not found</comment>
+    <comment pointValue="0" selected="false"/>
+  </item>
+  <item>
+    <objective pointValue="4" selected="true">#4 What particular problems did the 2-dimensional array pose?
+How would you solve these problems?</objective>
+    <referenceNumber>888</referenceNumber>
+    <comment pointValue="3" selected="true">Total Points</comment>
+    <comment pointValue="0" selected="true">Yes, parallel vectors are the solution even if they are very clumsy. You pose a reasonable reason for not using Vectors.
+Very good argument: the best tool for the best job.</comment>
+    <comment pointValue="-3" selected="false">Vectors cannot have more than one dimension so the best solution when using Vectors is to convert the 2Dim array into several parallel vectors.</comment>
+    <comment pointValue="1" selected="true">An excellent reason: make the program easy for the future to maintain! Yes! You will make a lot of maintenance programmers happy in the future with that kind of philosophy!</comment>
+  </item>
+  <item>
+    <objective pointValue="3" selected="true">Pass Vectors correctly to different methods</objective>
+    <referenceNumber>888</referenceNumber>
+    <comment pointValue="3" selected="true">Total Points</comment>
+    <comment pointValue="0" selected="true">Good</comment>
+    <comment pointValue="-3" selected="false">It looks like you simply used the code from the book and didn't convert the arrays into Vectors</comment>
+    <comment pointValue="-3" selected="false">All you have to do is pass the name of the Vector. You passed a method by putting the ( ) after the name.</comment>
+  </item>
+  <item>
+    <objective pointValue="0" selected="true">Was addElement( ) used correctly?</objective>
+    <referenceNumber>888</referenceNumber>
+    <comment pointValue="3" selected="true">Total Points</comment>
+    <comment pointValue="0" selected="false">Good</comment>
+    <comment pointValue="-3" selected="true">I didn't see where you utilized this method</comment>
+  </item>
+  <item>
+    <objective pointValue="3" selected="true">Was the appropriate method used to determine the size of the vector in the for loops?</objective>
+    <referenceNumber>888</referenceNumber>
+    <comment pointValue="3" selected="true">Total Points</comment>
+    <comment pointValue="0" selected="true">Good - size( ) is an valuable Vector method</comment>
+    <comment pointValue="-3" selected="false">It looks like you simply used the code from the book and didn't convert the arrays into</comment>
+    <comment pointValue="" selected="false">When using constants write them using ALL_CAPS. It makes them so much easier to spot in your code.</comment>
+  </item>
+  <item>
+    <objective pointValue="5" selected="true">How was the votesByRegion array handled?</objective>
+    <referenceNumber>888</referenceNumber>
+    <comment pointValue="5" selected="true">Total Points</comment>
+    <comment pointValue="0" selected="true">Excellent</comment>
+    <comment pointValue="-5" selected="false">Not handled</comment>
+    <comment pointValue="0" selected="false">You might want to simplify your data even more when doing program development to make it easier to run and debug the program. Maybe three candidates and even two regions would have been enough with 1 or 2 votes for each region.</comment>
+  </item>
+  <item>
+    <objective pointValue="-3" selected="true">Other notes</objective>
+    <referenceNumber>888</referenceNumber>
+    <comment pointValue="-3" selected="true">Late submission Charge</comment>
+    <comment pointValue="0" selected="false">Watch your file naming. When the specs ask for prjVector than Election Results puts the file at the top of the list and not where I expect it. The time I spent looking for your file would have been better spent writing comments or partying with my wife! If this were a web project it could be the difference between the user seeing the web pages or getting a 404 - file not found! error.</comment>
+    <comment pointValue="0" selected="false">Excellent work. Your commenting is stellar and your explanations are very easy to understand. Very nice looking code and program organization.</comment>
+  </item>
+</XMLData>

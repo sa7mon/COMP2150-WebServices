@@ -45,6 +45,7 @@ public class Results extends ActionBarActivity {
 
         // Make connection to the editText and button so later we can get the value.
         etUrl = (EditText)findViewById(R.id.etUrl);
+        etUrl.setText("http://www.google.com/");
         btnNavigate = (Button)findViewById(R.id.btnNavigate);
 
         btnNavigate.setOnClickListener(

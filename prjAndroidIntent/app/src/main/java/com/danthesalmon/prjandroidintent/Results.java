@@ -28,8 +28,10 @@ public class Results extends ActionBarActivity {
 
         // Get the intent that spawned this activity.
         Intent mainActivityIntent = getIntent();
+
         // Get the information from sent to us through the intent from MainActivity
         randPool = mainActivityIntent.getStringExtra("pool");
+
         // Log it to see if we get the right data sent through
         Log.d(MainActivity.TAG,"[Results] Pool: " + randPool);
         Log.d(MainActivity.TAG, "[Results] Random Password: " + generateRandStr(PASSWORD_LENGTH,randPool));
@@ -52,8 +54,12 @@ public class Results extends ActionBarActivity {
                 new View.OnClickListener() {
                     public void onClick(View view) {
                         // Do something on click.
+
+                        // 1. Create intent
                         Intent iNavigate = new Intent(Intent.ACTION_VIEW);
+                        // 2. Give it the data it needs (url)
                         iNavigate.setData(Uri.parse(etUrl.getText().toString()));
+                        // 3. Start the activity
                         startActivity(iNavigate);
                     }
                 }

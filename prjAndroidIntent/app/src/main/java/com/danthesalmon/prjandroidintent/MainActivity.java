@@ -110,13 +110,13 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void clickGenerate(View view) {
-        // Tell Java which activity we want to launch
+        // 1. Tell Java which activity we want to launch
         Intent generateIntent = new Intent(this,Results.class);
 
-        // Send the strPool string along to the other activity (Results).
+        // 2. Send the strPool string along to the other activity (Results).
         generateIntent.putExtra("pool",strPool);
 
-        // Switch screens just like we told it above.
+        // 3. Switch screens and launch Results.java
         startActivity(generateIntent);
     }
 }

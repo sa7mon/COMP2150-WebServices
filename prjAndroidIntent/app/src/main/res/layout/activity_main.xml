@@ -44,9 +44,6 @@
         android:text="@string/strSymbols"
         android:onClick="onCheckboxClicked" />
 
-    <!-- NUMBER PICKER GOES HERE -->
-    <!-- NUMBER PICKER ENDS HERE -->
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

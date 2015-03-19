@@ -18,6 +18,9 @@
 
 				<!-- Call template (like a function) -->
 				<xsl:call-template name="showComment" />
+
+				<!-- Call another template -->
+				<xsl:call-template name="countFeature" />
 			</body>
 		</html>
 	</xsl:template>
@@ -34,4 +37,12 @@
 			<xsl:value-of select="//Comments" />
 		</p>
 	</xsl:template>
+
+	<xsl:template name="countFeature">
+		<p>
+			<strong>Total number of features:</strong><br />
+			<xsl:value-of select="count(CRMActivity/CustomerRequest/EventData/SubscribedPlan/Feature)"/>
+		</p>
+	</xsl:template>
+
 </xsl:stylesheet>

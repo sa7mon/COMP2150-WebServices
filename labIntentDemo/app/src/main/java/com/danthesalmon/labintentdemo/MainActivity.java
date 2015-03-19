@@ -18,7 +18,6 @@ public class MainActivity extends ActionBarActivity {
 
     public void onClick(View view) {
         EditText text = (EditText) findViewById(R.id.inputforintent);
-
         String value = text.getText().toString();
     }
 

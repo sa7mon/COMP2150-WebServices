@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" ?>
+<catalog>
+  <cd type="300" format="MAC-PC">
+    <title>Empire Burlesque</title> 
+    <artist>
+      <name>Bob Dylan</name>
+      <hometown>Blue Earth, MN</hometown>
+      <birth>1961</birth>
+    </artist> 
+    <country>USA</country> 
+    <company>Columbia</company> 
+    <price>100.01</price> 
+    <year>1985</year> 
+  </cd>
+
+  <cd type="200" format="DVD">
+    <title>Hide your heart</title> 
+    <artist>
+      <name>Bonnie Tyler</name>
+      <hometown>Blue Earth, MN</hometown>
+      <birth>1961</birth>
+    </artist> 
+    <country>UK</country> 
+    <company>CBS Records</company> 
+    <price>100.01</price> 
+    <year>1988</year> 
+  </cd>
+
+  <cd type="300" format="PC DVD">
+    <title>Greatest Hits</title> 
+    <artist>
+      <name>Dolly Parton</name>
+      <hometown>Blue Earth, MN</hometown>
+      <birth>1961</birth>
+    </artist> 
+    <country>USA</country> 
+    <company>RCA</company> 
+    <price>100.01</price> 
+    <year>1982</year> 
+  </cd>
+
+  <cd format="MAC">
+    <title>Still got the blues</title> 
+    <artist>
+      <name>Gary Moore</name>
+      <hometown>Blue Earth, MN</hometown>
+      <birth>1961</birth>
+    </artist> 
+    <country>UK</country> 
+    <company>Virgin records</company> 
+    <price>100.01</price> 
+    <year>1990</year> 
+  </cd>
+
+  <cd format="   MAC   ">
+    <title>Eros</title> 
+    <artist>
+      <name>Eros Ramazzotti</name>
+      <hometown>Blue Earth, MN</hometown>
+      <birth>1961</birth>
+    </artist> 
+    <country>EU</country> 
+    <company>BMG</company> 
+    <price>100.01</price> 
+    <year>1997</year> 
+  </cd>
+
+  <cd>
+    <title>One night only</title> 
+    <artist>
+      <name>Bee Gees</name>
+      <hometown>Blue Earth, MN</hometown>
+      <birth>1961</birth>
+    </artist> 
+    <country>UK</country> 
+    <company>Polydor</company> 
+    <price>100.01</price> 
+    <year>1998</year> 
+  </cd>
+
+  <cd>
+    <title>Sylvias Mother</title> 
+    <artist>
+      <name>Dr.Hook</name>
+      <hometown>Blue Earth, MN</hometown>
+      <birth>1961</birth>
+    </artist> 
+    <country>UK</country> 
+    <company>CBS</company> 
+    <price>100.01</price> 
+    <year>1973</year> 
+  </cd>
+
+  <cd>
+    <title>Maggie May</title> 
+    <artist>
+      <name>Rod Stewart</name>
+      <hometown>Blue Earth, MN</hometown>
+      <birth>1961</birth>
+    </artist> 
+    <country>UK</country> 
+    <company>Pickwick</company> 
+    <price>100.01</price> 
+    <year>1990</year> 
+  </cd>
+
+  <cd>
+    <title>Romanza</title> 
+    <artist>
+      <name>Andrea Bocelli</name>
+      <hometown>Blue Earth, MN</hometown>
+      <birth>1961</birth>
+    </artist> 
+    <country>EU</country> 
+    <company>Polydor</company> 
+    <price>100.01</price> 
+    <year>1996</year> 
+  </cd>
+
+  <cd>
+    <title>When a man loves a woman</title> 
+    <artist>
+      <name>Percy Sledge</name>
+      <hometown>Blue Earth, MN</hometown>
+      <birth>1961</birth>
+    </artist> 
+    <country>USA</country> 
+    <company>Atlantic</company> 
+    <price>100.01</price> 
+    <year>1987</year> 
+  </cd>
+
+  <cd>
+    <title>Black angel</title> 
+    <artist>
+      <name>Savage Rose</name>
+      <hometown>Blue Earth, MN</hometown>
+      <birth>1961</birth>
+    </artist> 
+    <country>EU</country> 
+    <company>Mega</company> 
+    <price>100.01</price> 
+    <year>1995</year> 
+  </cd>
+
+  <cd>
+    <title>1999 Grammy Nominees</title> 
+    <artist>
+      <name>Many</name>
+      <hometown>Blue Earth, MN</hometown>
+      <birth>1961</birth>
+    </artist> 
+    <country>USA</country> 
+    <company>Grammy</company> 
+    <price>100.01</price> 
+    <year>1999</year> 
+  </cd>
+</catalog>

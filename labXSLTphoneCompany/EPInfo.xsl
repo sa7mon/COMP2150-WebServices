@@ -11,7 +11,27 @@
 			</head>
 			<body>
 				<h1>Enventis Information</h1>
+				<h2>
+					<xsl:value-of select="CRMActivity/Customer/FirstName" />&#160;
+					<xsl:value-of select="CRMActivity/Customer/LastName" />
+				</h2>
+
+				<!-- Call template (like a function) -->
+				<xsl:call-template name="showComment" />
 			</body>
 		</html>
+	</xsl:template>
+
+	<!-- TEMPLATES -->
+
+	<xsl:template name="showComment">
+		<p>
+			<strong>Action to take:</strong><br />
+			<xsl:value-of select="//Comments" />
+		</p>
+		<p>
+			<strong>Special Notes:</strong><br />
+			<xsl:value-of select="//Comments" />
+		</p>
 	</xsl:template>
 </xsl:stylesheet>

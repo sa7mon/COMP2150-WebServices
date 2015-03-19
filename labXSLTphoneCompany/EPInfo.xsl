@@ -21,6 +21,12 @@
 
 				<!-- Call another template -->
 				<xsl:call-template name="countFeature" />
+
+				<h2>Features to include</h2>
+				<ul>
+					<!-- Does something for all of the following objects (..../Feature like a css selector) -->
+					<xsl:apply-templates select="CRMActivity/CustomerRequest/EventData/SubscribedPlan/Feature" />
+				</ul>
 			</body>
 		</html>
 	</xsl:template>
@@ -32,17 +38,20 @@
 			<strong>Action to take:</strong><br />
 			<xsl:value-of select="//Comments" disable-output-escaping="yes" />
 		</p>
-		<p>
-			<strong>Special Notes:</strong><br />
-			<xsl:value-of select="//Comments" />
-		</p>
 	</xsl:template>
 
 	<xsl:template name="countFeature">
 		<p>
 			<strong>Total number of features:</strong><br />
-			<xsl:value-of select="count(CRMActivity/CustomerRequest/EventData/SubscribedPlan/Feature)"/>
+				<xsl:value-of select="count(CRMActivity/CustomerRequest/EventData/SubscribedPlan/Feature)"/>
 		</p>
 	</xsl:template>
 
-</xsl:stylesheet>
+	<!-- Template for matching -->
+	<xsl:template match="Feature">
+		<li>
+			<xsl:value-of select="./PlanFeatureID" />
+		</li>
+	</xsl:template>
+
+</xsl:stylesheet> 

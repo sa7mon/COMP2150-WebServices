@@ -27,7 +27,7 @@
 	<xsl:template name="showComment">
 		<p>
 			<strong>Action to take:</strong><br />
-			<xsl:value-of select="//Comments" />
+			<xsl:value-of select="//Comments" disable-output-escaping="yes" />
 		</p>
 		<p>
 			<strong>Special Notes:</strong><br />

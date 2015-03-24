@@ -31,13 +31,20 @@
 				<xsl:comment>
 					Loop through every "item" object.
 				</xsl:comment>
-				<xsl:apply-templates/>
+				<xsl:call-template name="outputItem" />
 			</body>
 		</html>
 	</xsl:template>
 
-	<xsl:template match="item">
-		<xsl:value-of select="objective" />
+	<xsl:template name="outputItem">
+		<xsl:for-each select="item">
+			<div class="item">
+				<strong>
+					Objective: <xsl:value-of select="objective" />
+				</strong>
+			</div>
+			<br />
+		</xsl:for-each>
 	</xsl:template>
 
 </xsl:stylesheet>

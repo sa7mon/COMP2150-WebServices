@@ -14,7 +14,23 @@
 			<head>
 				<title>Feedback for <xsl:value-of select="title" /></title>
 				<style type="text/css">
-
+					body {
+						background: gray;
+						font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+					}
+					section {
+						width: 75%;
+						margin: auto;
+						background-color: white;
+						padding-top: 5px;
+						padding-bottom: 5px;
+						padding-left: 5px;
+						margin-top: 10px;
+						border-radius: 10px;
+					}
+					h3,h1 {
+						text-align: center;
+					}
 				</style>
 			</head>
 			<body>
@@ -22,12 +38,14 @@
 					boldComment.html
 					Created: 3/17/15
 				-->
-				<h1>
-					<xsl:value-of select="title" />
-				</h1>
-				<h2>
-					<xsl:value-of select="summary" />
-				</h2>
+				<section>
+					<h1>
+						<xsl:value-of select="title" />
+					</h1>
+					<h2>
+						Summary: <xsl:value-of select="summary" />
+					</h2>
+				</section>
 
 				<xsl:comment>
 					Loop through every "item" object.
@@ -39,13 +57,13 @@
 	</xsl:template>
 
 	<xsl:template match="item">
-		<div class="item">
+		<section>
 			<strong>
 				Objective: <xsl:value-of select="objective" />
 			</strong>
 			<br />
 			<xsl:call-template name="getComments" />
-		</div>
+		</section>
 		<br />
 	</xsl:template>
 

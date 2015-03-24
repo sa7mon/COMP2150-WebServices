@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<cdCollection>
+  <cd>
+     Sweet Baby James
+     <artist>James Taylor</artist>
+   </cd>   
+   <cd>
+      Gangsta
+     <artist>Ice Cube</artist>
+   </cd>
+   <cd>
+     Symphony Number Nine
+     <artist>Beethoven</artist>
+   </cd>
+</cdCollection>

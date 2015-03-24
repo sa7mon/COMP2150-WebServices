@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!-- testDOM.html - cross-platform web page used to test the DOM in any browser.
+Original code from W3Schools http://www.w3schools.com/Dom/dom_parser.asp
+NOTE: Cross-domain not allowed for security reasons
+      The XML document must be on the same server as this page.
+-->
+<head>
+<title>testDOM</title>
+<script type="text/javascript">
+// Load up the XML document using either IE or FireFox
+try //Internet Explorer
+{
+  xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
+}
+catch(e)
+{
+  try //Firefox, Mozilla, Opera, etc.
+  {
+     xmlDoc=document.implementation.createDocument("","",null);
+  }
+  catch(e)
+  {
+    alert(e.message);  }
+}
+try 
+{
+  // turn off asynchronized loading, so parser does not continue
+  // execution of the script before the document is fully loaded.
+  xmlDoc.async=false;
+  // read in the xml document
+  xmlDoc.load("cd.xml");
+  // inform the user
+  document.write("cd.xml is loaded, ready for use");
+}
+catch(e) 
+{
+   alert(e.message);
+}
+
+// Display information from the XML document
+function showXML( )
+{
+   alert(xmlDoc.documentElement.nodeName);  
+}
+</script>
+
+</head>
+<body>
+<h1>Testing the DOM</h1>
+<h2>This is a cross-platform web page</h2>
+
+<script type="text/javascript">
+   showXML( );
+</script>
+</body>
+</html>

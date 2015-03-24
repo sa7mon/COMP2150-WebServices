@@ -51,8 +51,10 @@
 
 	<xsl:template name="getComments">
 		<xsl:for-each select="comment">
-			<xsl:value-of select="." />
-			<br />
+			<xsl:if test="@selected='true'">
+				<xsl:value-of select="." />
+				<br />
+			</xsl:if>
 		</xsl:for-each>
 	</xsl:template>
 

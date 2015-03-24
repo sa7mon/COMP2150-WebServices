@@ -1,4 +1,5 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
+	<xsl:output method="html" doctype-system="about:legacy-compat" indent="yes"/>
 	<xsl:template match="XMLData">
 		<xsl:comment>
 			Project: XSLT
@@ -31,18 +32,26 @@
 				<xsl:comment>
 					Loop through every "item" object.
 				</xsl:comment>
-				<xsl:call-template name="outputItem" />
+
+				<xsl:apply-templates select="item"/>
 			</body>
 		</html>
 	</xsl:template>
 
-	<xsl:template name="outputItem">
-		<xsl:for-each select="item">
-			<div class="item">
-				<strong>
-					Objective: <xsl:value-of select="objective" />
-				</strong>
-			</div>
+	<xsl:template match="item">
+		<div class="item">
+			<strong>
+				Objective: <xsl:value-of select="objective" />
+			</strong>
+			<br />
+			<xsl:call-template name="getComments" />
+		</div>
+		<br />
+	</xsl:template>
+
+	<xsl:template name="getComments">
+		<xsl:for-each select="comment">
+			<xsl:value-of select="." />
 			<br />
 		</xsl:for-each>
 	</xsl:template>

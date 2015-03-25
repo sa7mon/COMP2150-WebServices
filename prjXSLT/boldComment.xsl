@@ -1,17 +1,25 @@
+<!--
+	Project: XSLT
+	Created by: Dan Salmon
+	XSL Document: boldComment.xsl
+	XML Document: boldComment.xml
+	HTML Document: boldComment.html
+	Objective: Create an XSL document to parse boldComment.xml and output a styled html document. 
+-->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
 	<xsl:output method="html" doctype-system="about:legacy-compat" indent="yes"/>
 	<xsl:template match="XMLData">
-		<xsl:comment>
-			Project: XSLT
-			Created by: Dan Salmon
-			XSL Document: boldComment.xsl
-			XML Document: boldComment.xml
-			HTML Document: boldComment.html
-			Objective: Create an XSL document to parse boldComment.xml and output a styled html document. 
-		</xsl:comment>
-
 		<html>
 			<head>
+				<xsl:comment>
+					Project: XSLT
+					Created by: Dan Salmon
+					Created on: 3/17/15
+					XSL Document: boldComment.xsl
+					XML Document: boldComment.xml
+					HTML Document: boldComment.html
+					Objective: Create an XSL document to parse boldComment.xml and output a styled html document. 
+				</xsl:comment>
 				<title>Feedback for <xsl:value-of select="title" /></title>
 				<style type="text/css">
 					body {
@@ -37,31 +45,25 @@
 				</style>
 			</head>
 			<body>
-				<!-- 
-					boldComment.html
-					Created: 3/17/15
-				-->
 				<section id="intro">
 					<h1 id="title">
 						<xsl:value-of select="title" />
 					</h1>
 					<h2>
-						Summary: <xsl:value-of select="summary" />
+						<xsl:value-of select="summary" />
 					</h2>
 					<p>
+						<!-- Count all of the objectives. No need to check for enabled -->
 						<strong>
 							Total objectives: 
 						</strong><xsl:value-of select="count(/XMLData/item/objective)" />
 					</p>
 					<p>
+						<!-- Call the template sumTotalPoints like a function -->
 						<xsl:call-template name="sumTotalPoints" />
 					</p>
 				</section>
-
-				<xsl:comment>
-					Loop through every "item" object.
-				</xsl:comment>
-
+				<!-- Loop through every 'item' element -->
 				<xsl:apply-templates select="item"/>
 			</body>
 		</html>

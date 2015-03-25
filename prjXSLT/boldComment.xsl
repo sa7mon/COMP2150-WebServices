@@ -46,7 +46,9 @@
 						Summary: <xsl:value-of select="summary" />
 					</h2>
 					<p>
-						Total objectives: 
+						<strong>
+							Total objectives: 
+						</strong><xsl:value-of select="count(/XMLData/item/objective)" />
 					</p>
 					<p>
 						<xsl:call-template name="sumTotalPoints" />
@@ -91,8 +93,9 @@
 	<xsl:template name="sumTotalPoints">
 		<strong>
 			Project Score: 
-			<xsl:value-of select="sum(/XMLData/item/objective[@selected='true']/@pointValue)" /> / <xsl:value-of select="sum(/XMLData/item/comment[@selected='true' and . ='Total Points']/@pointValue)" />
 		</strong>
+		<xsl:value-of select="sum(/XMLData/item/objective[@selected='true']/@pointValue)" /> / <xsl:value-of select="sum(/XMLData/item/comment[@selected='true' and . ='Total Points']/@pointValue)" />
+		
 	</xsl:template>
 
 </xsl:stylesheet>

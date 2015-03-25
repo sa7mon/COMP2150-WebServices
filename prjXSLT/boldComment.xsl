@@ -18,7 +18,7 @@
 						background: gray;
 						font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
 					}
-					section {
+					section.objective,section#intro {
 						width: 75%;
 						margin: auto;
 						background-color: white;
@@ -31,6 +31,9 @@
 					h3,h1 {
 						text-align: center;
 					}
+					h1#title {
+						margin-top: -5px;
+					}
 				</style>
 			</head>
 			<body>
@@ -38,8 +41,8 @@
 					boldComment.html
 					Created: 3/17/15
 				-->
-				<section>
-					<h1>
+				<section id="intro">
+					<h1 id="title">
 						<xsl:value-of select="title" />
 					</h1>
 					<h2>
@@ -65,18 +68,17 @@
 	</xsl:template>
 
 	<xsl:template match="item">
-		<section>
+		<section class="objective">
 			<strong>
 				Objective: <xsl:value-of select="objective" />
 			</strong>
 			<br />
 			<xsl:call-template name="getComments" />
 		</section>
-		<br />
 	</xsl:template>
 
 	<xsl:template name="getComments">
-		Points: <xsl:value-of select="objective/@pointValue" />/<xsl:value-of select="comment[@selected='true' and . ='Total Points']/@pointValue" />
+		Objective Points: <xsl:value-of select="objective/@pointValue" />/<xsl:value-of select="comment[@selected='true' and . ='Total Points']/@pointValue" />
 		<br />
 		<ul>
 			<xsl:for-each select="comment[@selected='true' and not(. ='Total Points')]">

@@ -71,12 +71,18 @@
 	</xsl:template>
 
 	<xsl:template name="getComments">
-		Total Points: <xsl:value-of select="comment[@selected='true' and . ='Total Points']/@pointValue" />
+		Points: <xsl:value-of select="objective/@pointValue" />/<xsl:value-of select="comment[@selected='true' and . ='Total Points']/@pointValue" />
 		<br />
-		<xsl:for-each select="comment[@selected='true' and not(. ='Total Points')]">
-			<xsl:value-of select="." />
-			<br />
-		</xsl:for-each>
+		<ul>
+			<xsl:for-each select="comment[@selected='true' and not(. ='Total Points')]">
+				<li>
+					<strong>
+						<xsl:value-of select="@pointValue" />&#160;
+					</strong>
+						<xsl:value-of select="." />
+				</li>
+			</xsl:for-each>
+		</ul>
 	</xsl:template>
 
 </xsl:stylesheet>

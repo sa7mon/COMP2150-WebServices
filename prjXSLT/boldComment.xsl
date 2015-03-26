@@ -75,11 +75,13 @@
 				Objective: <xsl:value-of select="objective" />
 			</strong>
 			<br />
+			<!-- Call the getComments template like a function. -->
 			<xsl:call-template name="getComments" />
 		</section>
 	</xsl:template>
 
 	<xsl:template name="getComments">
+		<!-- Output the earned and total objective points -->
 		Objective Points: <xsl:value-of select="objective/@pointValue" />/<xsl:value-of select="comment[@selected='true' and . ='Total Points']/@pointValue" />
 		<br />
 		<ul>
@@ -95,11 +97,10 @@
 	</xsl:template>
 
 	<xsl:template name="sumTotalPoints">
+		<!-- Output the total earned and possible project points -->
 		<strong>
 			Project Score: 
 		</strong>
 		<xsl:value-of select="sum(/XMLData/item/objective[@selected='true']/@pointValue)" /> / <xsl:value-of select="sum(/XMLData/item/comment[@selected='true' and . ='Total Points']/@pointValue)" />
-		
 	</xsl:template>
-
 </xsl:stylesheet>

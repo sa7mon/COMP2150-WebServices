@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<train>
+   <car type="engine">
+      <color>black</color>
+      <weight>512 tons</weight>
+      <length>60 feet</length>
+      <occupants>3</occupants>
+   </car>
+   <car type="baggage">
+      <color>green</color>
+      <weight>80 tons</weight>
+      <length>40 feet</length>
+      <occupants>0</occupants>
+   </car>
+   <car type="dining">
+      <color>green and yellow</color>
+      <weight>50 tons</weight>
+      <length>50 feet</length>
+      <occupants>18</occupants>
+   </car>
+   <car type="passenger">
+      <color>green and yellow</color>
+      <weight>40 tons</weight>
+      <length>60 feet</length>
+      <occupants>23</occupants>
+   </car>
+   <car type="pullman">
+      <color>green and yellow</color>
+      <weight>50 tons</weight>
+      <length>60 feet</length>
+      <occupants>23</occupants>
+   </car>
+   <car type="caboose">
+      <color>red</color>
+      <weight>90 tons</weight>
+      <length>30 feet</length>
+      <occupants>4</occupants>
+   </car>
+</train>

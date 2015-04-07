@@ -31,10 +31,10 @@ This project will demonstrate that you know to do the following:
     As you develop the DTD you may have to modify the design of your original XML document so it meets the requirements of the DTD.
     
 3. Create an XML Schema file and use it to validate collection.xml. This file must be a valid XML file as well as utilize at least one valid schema namespace. This file should demonstrate use of the following elements and attributes:
-    * <complexType>
-    * <group>
-    * <sequence>
-    * <attribute>
+    * &lt;complexType&gt;
+    * &lt;group&gt;
+    * &lt;sequence&gt;
+    * &lt;attribute&gt;
     * minOccurs=" "
     * maxOccurs=" "
     * type=" "

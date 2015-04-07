@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+<!-- jsonDemo.html - Show how json is used on a web page
+  Peter Johnson - peterk@webExplorations.com
+  Written:   03-27-14
+  Revised:   
+  -->
+ <title>json Demo</title>
+
+ <script type="text/javascript">
+ 
+ var book = {
+   "title":"Of Mice and Men",
+    "author":"John Steinbeck",
+    "ISBN":"978-0749717100"
+ }
+ 
+ var library = {
+ "scifi": [
+    {
+    "title":"Ender's Game",
+    "author":"Orson Scott Card",
+    "ISBN":"978-0812550702"
+    },
+    {
+    "title":"Speaker for the Dead",
+    "author":"Orson Scott Card",
+    "ISBN":"978-0812550757"
+    },
+    {
+    "title":"The Martian",
+    "author":"Andy Weir",
+    "ISBN":"eBook-Amazon"
+    }
+ ]
+ }
+ 
+ function displayBook( )
+ {
+    document.write("<strong>Title:</strong> " + book.title + "<br />");
+    document.write("<strong>Author:</strong> " + book.author + "<br />");
+    document.write("<strong>ISBN:</strong> " + book.ISBN + "<hr />");
+ } // end of displayBook( )
+ 
+ function displayLibrary( )
+ {
+     document.write("<h3>Sci-fi Library</h3>");
+     for(x=0; x<library.scifi.length; x++)
+     {
+          document.write("<strong>Title:</strong> " + library.scifi[x].title + "<br />");
+          document.write("<strong>Author:</strong> " + library.scifi[x].author + "<br />");
+          document.write("<strong>ISBN:</strong> " + library.scifi[x].ISBN + "<hr />");
+     }
+ 
+ }
+
+ </script>
+ <style type="text/css">
+  body {
+  background:  #EEE;
+  font-size:   16px;
+  font-family: helvetica, arial, sans-serif;
+  }
+  
+  h1 {
+  border:  1px #000080 solid;
+  padding: 10px;
+  background:  #AAA;
+  color:    white;
+  }
+  
+  h2 {
+  background: #DDD;
+  color:      #000080;
+  padding:    10px;
+  border:     1px #000080 solid;
+  }
+  
+  li {
+  margin:     1.5em 0 0 0;
+  }
+  
+  #frame {
+  max-width:   800px;
+  margin:      auto;
+  border:      1px solid #000080;
+  padding:     20px;
+  }
+ </style>
+</head>
+<body>
+<div id="frame">
+<h1>JSON Demo</h1>
+
+<p>
+<script>
+displayBook( );
+displayLibrary( );
+</script>
+</p>
+</frame>
+</body>
+</html>

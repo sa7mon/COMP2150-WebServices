@@ -1,6 +1,11 @@
 <?xml version="1.0" standalone="no"?>
-<svg width="200" height="400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<svg width="400" height="1000" version="1.1" xmlns="http://www.w3.org/2000/svg">
 	<defs>
+		<linearGradient id="grad1" y2="1" x2="1" x1="0" y1="1">
+			<stop stop-color="rgb(255, 181, 127)" offset="0"/>
+			<stop stop-color="rgb(255, 200, 243)" offset="1"/>
+		</linearGradient>
+
 		<style type="text/css">
 			<![CDATA[
 				#backgroundBox {
@@ -11,6 +16,9 @@
 				#backgroundBox:hover {
 					stroke: 	green;
 					transform:  translate(45,45);
+				}
+				#gradRect { 
+					fill: url(#grad1); 
 				}
 			]]>
 		</style>
@@ -43,4 +51,6 @@
     <line x1="40" x2="120" y1="270" y2="270" stroke="black" stroke-width="20" stroke-linecap="butt"/>
     <line x1="40" x2="120" y1="310" y2="310" stroke="black" stroke-width="20" stroke-linecap="square"/>
   	<line x1="40" x2="120" y1="350" y2="350" stroke="black" stroke-width="20" stroke-linecap="round"/>
+
+  	<rect id="gradRect" x="150" y="50" width="100" height="100"/>
 </svg>

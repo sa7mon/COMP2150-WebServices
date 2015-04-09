@@ -3,9 +3,24 @@
 	<defs>
 		<style type="text/css">
 			<![CDATA[
+			#animBox {
+				stroke: 	#ff0000;
+				fill:		#0000ff;
+			}
 			]]>
 		</style>
 	</defs>
 
+	<rect id="animBox" x="50" y="50" height="100" width="50">
+		<animateTransform
+			attributeName="transform"
+			begin="0s"
+			dur="10s"
+			type="scale"
+			from="1 1"
+			to="0 4"
+			repeatCount="indefinite"
+		/>
+	</rect>
 
 </svg>

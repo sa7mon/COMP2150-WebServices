@@ -35,6 +35,7 @@
 
     <!-- First bar - 2010 data TODO find actual height-->
     <rect x="111" y="390" width="74" height="30"/>
-
+    <!-- Second bar - 2011 data -->
+    <rect x="222" y="350" width="74" height="70" />
 
 </svg>

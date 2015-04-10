@@ -12,6 +12,9 @@
 			#axisx {
 				stroke: black;
 			}
+			#axisy {
+				stroke: black;
+			}
 			]]>
 		</style>
 	</defs>
@@ -25,6 +28,8 @@
     <!-- Y axis -->
     <line id="axisx" x1="74" y1="70" x2="74" y2="420" />
 
+    <!-- X axis -->
+    <line id="axisy" x1="74" y1="420" x2="518" y2="420" />
 
 
 </svg>

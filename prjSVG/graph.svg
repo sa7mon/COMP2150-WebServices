@@ -37,5 +37,7 @@
     <rect x="111" y="390" width="74" height="30"/>
     <!-- Second bar - 2011 data -->
     <rect x="222" y="350" width="74" height="70" />
+    <!-- Third bar - 2012 data -->
+    <rect x="333" y="183.75" width="74" height="236.25" />
 
 </svg>

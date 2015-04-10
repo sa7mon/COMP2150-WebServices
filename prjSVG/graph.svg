@@ -41,4 +41,18 @@
     <rect x="333" y="183.75" width="74" height="236.25" />
     <!-- Fourth bar - 2013 data -->
     <rect x="444" y="70" width="74" height="350" />
+
+    <!-- ###### X-AXIS LABELS ###### -->
+
+    <!-- 2010 bar label -->
+    <text id="lbl2010" x="130" y="437.5">2010</text>
+
+    <!-- 2011 bar label -->
+    <text id="lbl2011" x="241" y="437.5">2011</text>
+
+    <!-- 2012 bar label -->
+    <text id="lbl2012" x="352" y="437.5">2012</text>
+
+    <!-- 2013 bar label -->
+    <text id="lbl2010" x="463" y="437.5">2013</text>
 </svg>

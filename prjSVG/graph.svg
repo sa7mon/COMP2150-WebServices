@@ -34,10 +34,11 @@
     <!-- ########### BARS ########## -->
 
     <!-- First bar - 2010 data TODO find actual height-->
-    <rect x="111" y="390" width="74" height="30"/>
+    <rect x="111" y="390" width="74" height="30" />
     <!-- Second bar - 2011 data -->
     <rect x="222" y="350" width="74" height="70" />
     <!-- Third bar - 2012 data -->
     <rect x="333" y="183.75" width="74" height="236.25" />
-
+    <!-- Fourth bar - 2013 data -->
+    <rect x="444" y="70" width="74" height="350" />
 </svg>

@@ -27,9 +27,14 @@
 
     <!-- Y axis -->
     <line id="axisx" x1="74" y1="70" x2="74" y2="420" />
-
     <!-- X axis -->
     <line id="axisy" x1="74" y1="420" x2="518" y2="420" />
+
+
+    <!-- ########### BARS ########## -->
+
+    <!-- First bar - 2010 data TODO find actual height-->
+    <rect x="111" y="390" width="74" height="30"/>
 
 
 </svg>

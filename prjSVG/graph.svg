@@ -2,6 +2,7 @@
      baseProfile="full"
      width="592" height="490"
      xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
      >
     <defs>
         <linearGradient id="grad" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -28,6 +29,9 @@
 
 	<!--  Grey semi-transparent box in the background  .-->
     <rect id="backbox" width="100%" height="100%" />
+
+    <!-- ####### CHART LABEL ###### -->
+    <text x="246" y="30">Tweets Per Day</text>
 
     
     <!-- ########### AXES ########## -->
@@ -64,6 +68,9 @@
     <!-- 2013 bar label -->
     <text id="lbl2010" x="463" y="437.5">2013</text>
 
+    <!-- X-Axis label -->
+    <text id="lblYear" x="300" y="470">Year</text>
+
     <!-- ####### GRADUATIONS ######## -->
 
     <line id="100" x1="74" y1="350" x2="518" y2="350" stroke="black" />
@@ -76,7 +83,7 @@
 
     <line id="500" x1="74" y1="70" x2="518" y2="70" stroke="black" />
 
-    <!-- #### GRADUATION LABELS ##### -->
+    <!-- #### Y-Axis LABELS ##### -->
     <text id="lbl100" x="45" y="355">100</text>
 
     <text id="lbl200" x="45" y="285">200</text>
@@ -86,4 +93,9 @@
     <text id="lbl400" x="45" y="145">400</text>
 
     <text id="lbl500" x="45" y="75">500</text>
+
+    <path id="lblTweets" d="M 150,400 L 150, 200" />
+    <text>
+        <textPath xlink:href="#my_path">Tweets</textPath>
+    </text>
 </svg>

@@ -9,12 +9,6 @@
 			#backbox {
 				fill:	rgba(188,187,181,0.8);
 			}
-			#axisx {
-				stroke: black;
-			}
-			#axisy {
-				stroke: black;
-			}
 			]]>
 		</style>
 	</defs>
@@ -24,11 +18,12 @@
 
     
     <!-- ########### AXES ########## -->
-
-    <!-- Y axis -->
-    <line id="axisx" x1="74" y1="70" x2="74" y2="420" />
-    <!-- X axis -->
-    <line id="axisy" x1="74" y1="420" x2="518" y2="420" />
+    <g stroke="black">
+        <!-- Y axis -->
+        <line id="axisx" x1="74" y1="70" x2="74" y2="420" />
+        <!-- X axis -->
+        <line id="axisy" x1="74" y1="420" x2="518" y2="420" />
+    </g>
 
 
     <!-- ########### BARS ########## -->

@@ -23,6 +23,9 @@
             .bar {
                 fill: rgba(0,0,0,1);
             }
+            text {
+                font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+            }
 			]]>
 		</style>
 	</defs>

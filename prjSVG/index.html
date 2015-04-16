@@ -4,7 +4,7 @@
 			prjSVG.html - Web page displaying the create SVG file.
 			by: Dan Salmon (https://danthesalmon.com)
 			Created: 4/9/15
-			Last Updated: 4/9/15
+			Last Updated: 4/15/15
 		-->
 		<title></title>
 		<style type="text/css">
@@ -25,39 +25,48 @@
 			h3,h1 {
 				text-align: center;
 			}
-			section {
+			section.center {
+				text-align: center;
+			}
+			h2 {
 				text-align: center;
 			}
 		</style>
 	</head>
 	<body>
-		<section id="title">
+		<section id="title" class="center">
 			<h1>Project: SVG</h1>
 		</section>
 
-		<section id="svg">
+		<section id="svg" class="center">
 			<object data="graph.svg" type="image/svg+xml"></object>
 		</section>
 
-		<section id="stats">
+		<section id="stats" class="center">
 			<h2>Source</h2>
 			<a href="http://www.internetlivestats.com/twitter-statistics/">Statistics Source</a>
 		</section>
 
 		<section id="description">
+			<h2>SVG Information</h2>
 			<ul>
-				<li>What is SVG?</li>
+				<li><strong>What is SVG?</strong></li>
 					<ul>
 						<li>SVG is a Standard Vector Graphic. It's an image file that can easily be stretched without looking bad like most pictures do. It can 
 							do animations as well.</li>
 					</ul>
-				<li>What are three benefits of SVG?</li>
+				<li><strong>What are three benefits of SVG?</strong></li>
 				<ul>
 					<li>Since an SVG file is just a bunch of coordinates, it's very bandwidth friendly. The load times are the same if the image is small or huge.</li>
 					<li>They are incredibly easy to edit. There is no need for Photoshop knowledge to change the text in a picture - just open it up in a text editor.</li>
 					<li>Since it is code at it's core, one image can be turned into hundreds of different images by using the same core code and tweaking it.</li>
 				</ul>
-				<li>What is one disadvantage of SVG?</li>
+				<li><strong>What is one disadvantage of SVG?</strong></li>
+				<ul>
+					<li>It can be incredibly complicated to create intricate images. SVG is good if your image has lots of simple shapes in it, but there's virtually no way
+						that you could re-create a hi-def picture of a bee on a plant with an SVG image.
+					</li>
+				</ul>
 			</ul>
 		</section>
 	</body>

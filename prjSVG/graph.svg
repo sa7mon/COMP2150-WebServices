@@ -75,4 +75,15 @@
     <line id="400" x1="74" y1="140" x2="518" y2="140" stroke="black" />
 
     <line id="500" x1="74" y1="70" x2="518" y2="70" stroke="black" />
+
+    <!-- #### GRADUATION LABELS ##### -->
+    <text id="lbl100" x="45" y="355">100</text>
+
+    <text id="lbl200" x="45" y="285">200</text>
+
+    <text id="lbl300" x="45" y="215">300</text>
+    
+    <text id="lbl400" x="45" y="145">400</text>
+
+    <text id="lbl500" x="45" y="75">500</text>
 </svg>

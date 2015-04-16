@@ -4,11 +4,24 @@
      xmlns="http://www.w3.org/2000/svg"
      >
     <defs>
+        <linearGradient id="grad" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0" stop-color="#ffffff"/>
+            <stop offset="1" stop-color="#8dedf7"/>
+        </linearGradient>
+        <linearGradient id="grad2" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0" stop-color="#ffffff"/>
+            <stop offset="0.5" stop-color="#8dedf7"/>
+            <stop offset="1" stop-color="#ffffff"/>
+        </linearGradient>
 		<style type="text/css">
 			<![CDATA[
 			#backbox {
-				fill:	rgba(188,187,181,0.8);
+				//fill:	rgba(188,187,181,0.8);
+                fill:   url(#grad2);
 			}
+            .bar {
+                fill: rgba(0,0,0,0.9);
+            }
 			]]>
 		</style>
 	</defs>
@@ -29,13 +42,13 @@
     <!-- ########### BARS ########## -->
 
     <!-- First bar - 2010 data TODO find actual height-->
-    <rect x="111" y="390" width="74" height="30" />
+    <rect class="bar" x="111" y="390" width="74" height="30" />
     <!-- Second bar - 2011 data -->
-    <rect x="222" y="350" width="74" height="70" />
+    <rect class="bar" x="222" y="350" width="74" height="70" />
     <!-- Third bar - 2012 data -->
-    <rect x="333" y="183.75" width="74" height="236.25" />
+    <rect class="bar" x="333" y="183.75" width="74" height="236.25" />
     <!-- Fourth bar - 2013 data -->
-    <rect x="444" y="70" width="74" height="350" />
+    <rect class="bar" x="444" y="70" width="74" height="350" />
 
     <!-- ###### X-AXIS LABELS ###### -->
 

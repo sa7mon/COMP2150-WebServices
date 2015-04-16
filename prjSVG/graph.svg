@@ -94,8 +94,8 @@
 
     <text id="lbl500" x="45" y="75">500</text>
 
-    <path id="lblTweets" d="M 150,400 L 150, 200" />
+    <path id="lblTweets" d="M 30,245 L 30, 190" />
     <text>
-        <textPath xlink:href="#my_path">Tweets</textPath>
+        <textPath xlink:href="#lblTweets">Tweets</textPath>
     </text>
 </svg>
